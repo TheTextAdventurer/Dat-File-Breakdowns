@@ -1,4 +1,12 @@
 # Adventureland
+ *Table of Contents*
+ -[Header](#Header)
+ -[Actions](#Actions)
+ -[Verbs](#Verbs)
+ -[Nouns](#Nouns)
+ -[Rooms](#Rooms)
+ -[Messages](#Messages)
+ -[Items](#Items)
 ## Header
 | Property| Value |
 | --------| ----- |
