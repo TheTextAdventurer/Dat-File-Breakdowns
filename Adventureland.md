@@ -1865,12 +1865,12 @@ look
 | 0| top of a tall cypress tree| 1 |
 | 0| damp hollow stump in the swamp| 1, 4 |
 | 0| root chamber under the stump| 3 |
-| 0| semi\-dark hole by the root chamber| 4 |
+| 0| semi-dark hole by the root chamber| 4 |
 | 0| long down sloping hall| 5, 7 |
 | 0| large cavern| 31, 9, 27, 6, 12 |
 | 0| large 8 sided room| 31 |
 | 0| royal anteroom| 7, 20 |
-| 0| \*I'm on the shore of a lake| 26, 29, 23 |
+| 0| *I'm on the shore of a lake| 26, 29, 23 |
 | 0| forest| 11, 11, 23, 11 |
 | 0| maze of pits| 13, 15, 15, 13 |
 | 0| maze of pits| 14, 12 |
@@ -1878,31 +1878,22 @@ look
 | 0| maze of pits| 12, 13, 12, 13 |
 | 0| maze of pits| 17, 14, 17 |
 | 0| maze of pits| 17, 12, 12, 15, 14, 18 |
-| 0| \*I'm at the bottom of a very deep chasm\. High above me is
-a pair of ledges\. One has a bricked up window across its face
-the other faces a Throne\-room| 17 |
-| 0| \*I'm on a narrow ledge by a chasm\. Across the chasm is
-the Throne\-room| 20 |
+| 0| *I'm at the bottom of a very deep chasm. High above me is a pair of ledges. One has a bricked up window across its face the other faces a Throne-room| 17 |
+| 0| *I'm on a narrow ledge by a chasm. Across the chasm is the Throne-room| 20 |
 | 0| royal chamber| 9 |
-| 0| \*I'm on a narrow ledge by a Throne\-room
-Across the chasm is another ledge|  |
+| 0| *I'm on a narrow ledge by a Throne-room Across the chasm is another ledge|  |
 | 0| throne room| 21 |
 | 0| sunny meadow| 1, 10, 11 |
-| 0| \*I think I'm in real trouble now\. There's a fellow here with
-a pitchfork and pointed tail\. \.\.\.Oh Hell\!|  |
+| 0| *I think I'm in real trouble now. There's a fellow here with a pitchfork and pointed tail. ...Oh Hell!|  |
 | 0| hidden grove| 11, 1 |
-| 0| quick\-sand bog|  |
-| 0| Memory chip of a COMPUTER\!
-I took a wrong turn\!| 7 |
-| 0| top of an oak\.
-To the East I see a meadow, beyond that a lake\.| 11 |
-| 0| \*I'm at the edge of a BOTTOMLESS hole| 10, 1 |
-| 0| \*I'm on a ledge just below the rim of the BOTTOMLESS hole\. I
-don't think I want to go down| 29, 24 |
-| 0| long tunnel\. I hear buzzing ahead| 8, 7 |
-| 0| \*I'm in an endless corridor| 32, 33, 32, 32, 32, 32 |
-| 0| large misty room with strange
-unreadable letters over all the exits\.| 32, 24, 11, 24, 28, 24 |
+| 0| quick-sand bog|  |
+| 0| Memory chip of a COMPUTER! I took a wrong turn!| 7 |
+| 0| top of an oak. To the East I see a meadow, beyond that a lake.| 11 |
+| 0| *I'm at the edge of a BOTTOMLESS hole| 10, 1 |
+| 0| *I'm on a ledge just below the rim of the BOTTOMLESS hole. I don't think I want to go down| 29, 24 |
+| 0| long tunnel. I hear buzzing ahead| 8, 7 |
+| 0| *I'm in an endless corridor| 32, 33, 32, 32, 32, 32 |
+| 0| large misty room with strange unreadable letters over all the exits.| 32, 24, 11, 24, 28, 24 |
 ## Messages
 | Index| Text |
 | -----| ---- |
