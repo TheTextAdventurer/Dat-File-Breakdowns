@@ -31,7 +31,7 @@ item '\*GOLDEN NET\*(index:19)' not carried
 ```
 *Actions*
 ```
-Print message 'Fish have escaped back to the lake.'
+Print message 'Fish have escaped back to the lake\.'
 item '*GOLDEN FISH*(index:8)' is moved to room 10
 ```
 ### Action 1 - DIE BITES - Probability: 10
@@ -42,7 +42,7 @@ player not in room 33
 ```
 *Actions*
 ```
-Print message 'My bites have rotted my whole body!'
+Print message 'My bites have rotted my whole body\!'
 Death, clear dark flag, move to last room
 ```
 ### Action 2 - BITE INFECT - Probability: 10
@@ -53,9 +53,7 @@ item 'Evil smelling mud(index:7)' not carried
 ```
 *Actions*
 ```
-Print message '
-My chigger bites are now INFECTED!
-'
+Print message ' My chigger bites are now INFECTED\! '
 take item 'Infected chigger bites(index:21', no check done to see if can carry
 Item 'Chigger bites(index:20' is removed from the game (put in room 0)
 ```
@@ -89,7 +87,7 @@ player in room 24
 ```
 *Actions*
 ```
-Print message 'You lost *ALL* treasures.'
+Print message 'You lost \*ALL\* treasures\.'
 game over
 ```
 ### Action 6 - MUD OFF - Probability: 5
@@ -100,7 +98,7 @@ item 'Water in bottle(index:12)' not carried
 ```
 *Actions*
 ```
-Print message 'The mud dried up and fell off.'
+Print message 'The mud dried up and fell off\.'
 item 'Evil smelling mud(index:7)' is moved to room 1
 ```
 ### Action 7 - BIT CHIG - Probability: 8
@@ -114,9 +112,7 @@ item 'Evil smelling mud(index:7)' not carried
 *Actions*
 ```
 take item 'Chigger bites(index:20', no check done to see if can carry
-Print message '
-I'm bitten by chiggers.
-'
+Print message ' I'm bitten by chiggers\. '
 ```
 ### Action 8 - BEE STING - Probability: 8
 *Conditions*
@@ -148,7 +144,7 @@ item 'Water in bottle(index:12)' not carried
 ```
 *Actions*
 ```
-Print message 'Too dry, the fish died.'
+Print message 'Too dry, the fish died\.'
 Item '*GOLDEN FISH*(index:8' is removed from the game (put in room 0)
 get item 'Dead fish(index:55', check if can carry
 ```
@@ -174,9 +170,7 @@ item 'Evil smelling mud(index:7)' not carried
 *Actions*
 ```
 take item 'Chigger bites(index:20', no check done to see if can carry
-Print message '
-I'm bitten by chiggers.
-'
+Print message ' I'm bitten by chiggers\. '
 ```
 ### Action 13 - MUD DRAGON - Probability: 50
 *Conditions*
@@ -187,7 +181,7 @@ item 'Evil smelling mud(index:7)' carried or in room with player
 *Actions*
 ```
 clear screen
-Print message 'Dragon smells something. Awakens & attacks me!'
+Print message 'Dragon smells something\. Awakens & attacks me\!'
 Death, clear dark flag, move to last room
 ```
 ### Action 14 - BLAST WALL - Probability: 100
@@ -221,7 +215,7 @@ bitflag 2 is false
 ```
 *Actions*
 ```
-Print message '` DRAGON STING ` and fades. I don't get it, I hope you do.'
+Print message '` DRAGON STING ` and fades\. I don't get it, I hope you do\.'
 set 1 flag
 set 2 flag
 ```
@@ -255,11 +249,7 @@ bitflag 13 is false
 ```
 Print message 'A voice BOOOOMS out:'
 set 13 flag
-Print message '
-Welcome to Adventure number: 1 `ADVENTURELAND`.
-In this Adventure you're to find *TREASURES* & store them away.
-
-To see how well you're doing say: `SCORE`'
+Print message ' Welcome to Adventure number: 1 `ADVENTURELAND`\. In this Adventure you're to find \*TREASURES\* & store them away\.  To see how well you're doing say: `SCORE`'
 Print message 'Remember you can always say `HELP`'
 ```
 ### Action 20 - 2ND MIRROR CLUE - Probability: 100
@@ -270,7 +260,7 @@ bitflag 2 is set
 ```
 *Actions*
 ```
-Print message '`Don't waste honey, get mad instead! Dam lava!?`'
+Print message '`Don't waste honey, get mad instead\! Dam lava\!?`'
 set 1 flag
 set 2 flag
 ```
@@ -302,7 +292,7 @@ item 'Stream of lava(index:34)' in room with player
 ```
 *Actions*
 ```
-Print message 'There's something there all right! Maybe I should go there?'
+Print message 'There's something there all right\! Maybe I should go there?'
 ```
 ### Action 24 - Input: LOO TRE
 *Conditions*
@@ -311,7 +301,7 @@ item '\-HOLLOW\- stump and remains of a felled tree(index:4)' in room with playe
 ```
 *Actions*
 ```
-Print message 'There's something there all right! Maybe I should go there?'
+Print message 'There's something there all right\! Maybe I should go there?'
 ```
 ### Action 25 - Input: GET MUD
 *Conditions*
@@ -324,7 +314,7 @@ item 'Infected chigger bites(index:21)' carried
 Item 'Infected chigger bites(index:21' is removed from the game (put in room 0)
 get item 'Evil smelling mud(index:7', check if can carry
 Print message 'OK'
-Print message 'BOY that really hit the spot!'
+Print message 'BOY that really hit the spot\!'
 ```
 ### Action 26 - Input: GET HON
 *Conditions*
@@ -349,7 +339,7 @@ item 'Chigger bites(index:20)' carried
 Item 'Chigger bites(index:20' is removed from the game (put in room 0)
 get item 'Evil smelling mud(index:7', check if can carry
 Print message 'OK'
-Print message 'BOY that really hit the spot!'
+Print message 'BOY that really hit the spot\!'
 ```
 ### Action 28 - Input: DRO HON
 *Conditions*
@@ -360,7 +350,7 @@ item 'Very thin black bear(index:25)' in room with player
 *Actions*
 ```
 Item '*ROYAL HONEY*(index:23' is removed from the game (put in room 0)
-Print message 'Bear eats the honey and falls asleep.'
+Print message 'Bear eats the honey and falls asleep\.'
 drops item 'Sleeping bear(index:39' into current room
 Item 'Very thin black bear(index:25' is removed from the game (put in room 0)
 ```
@@ -393,7 +383,7 @@ item 'Empty bottle(index:13)' not carried
 ```
 *Actions*
 ```
-Print message 'First I need an empty container.'
+Print message 'First I need an empty container\.'
 ```
 ### Action 32 - Input: GET BEE
 *Conditions*
@@ -419,7 +409,7 @@ player in room 18
 ```
 *Actions*
 ```
-Print message 'No, its too hot.'
+Print message 'No, its too hot\.'
 ```
 ### Action 35 - Input: INV ANY
 *Actions*
@@ -435,7 +425,7 @@ player in room 17
 *Actions*
 ```
 move room 23
-Print message 'Something I'm holding vibrates and...'
+Print message 'Something I'm holding vibrates and\.\.\.'
 clear darkness flag
 look
 ```
@@ -457,7 +447,7 @@ item 'Flint & steel(index:28)' carried
 *Actions*
 ```
 Print message 'Gas bladder blew up'
-Print message 'in my hands!'
+Print message 'in my hands\!'
 Death, clear dark flag, move to last room
 Item 'Distended gas bladder(index:31' is removed from the game (put in room 0)
 ```
@@ -504,7 +494,7 @@ item 'Empty wine bladder(index:40)' not carried
 ```
 *Actions*
 ```
-Print message 'First I need an empty container.'
+Print message 'First I need an empty container\.'
 ```
 ### Action 43 - Input: GET GAS
 *Conditions*
@@ -526,7 +516,7 @@ item 'Distended gas bladder(index:31)' carried
 ```
 swap item locations 'Distended gas bladder(index:31)' and 'Empty wine bladder(index:40)'
 Print message 'OK'
-Print message 'Gas dissipates. (I think you blew it)'
+Print message 'Gas dissipates\. \(I think you blew it\)'
 ```
 ### Action 45 - Input: LIG GAS
 *Conditions*
@@ -582,7 +572,7 @@ item '\*JEWELED FRUIT\*(index:46)' carried
 ```
 *Actions*
 ```
-Print message 'BOY that really hit the spot!'
+Print message 'BOY that really hit the spot\!'
 Item '*JEWELED FRUIT*(index:46' is removed from the game (put in room 0)
 ```
 ### Action 51 - Input: GET WAT
@@ -659,7 +649,7 @@ player in room 18
 ```
 *Actions*
 ```
-Print message 'No, its too hot.'
+Print message 'No, its too hot\.'
 ```
 ### Action 58 - Input: DRO BEE
 *Conditions*
@@ -669,7 +659,7 @@ item 'Very thin black bear(index:25)' in room with player
 ```
 *Actions*
 ```
-Print message 'Bees madden bear, bear then attacks me!'
+Print message 'Bees madden bear, bear then attacks me\!'
 Item 'Bees in a bottle(index:26' is removed from the game (put in room 0)
 drops item 'Large african bees(index:24' into current room
 set 14 flag
@@ -682,7 +672,7 @@ item 'Empty bottle(index:13)' not carried
 ```
 *Actions*
 ```
-Print message 'First I need an empty container.'
+Print message 'First I need an empty container\.'
 ```
 ### Action 60 - Input: REA WEB
 *Conditions*
@@ -691,7 +681,7 @@ item 'Spider web with writing on it(index:3)' in room with player
 ```
 *Actions*
 ```
-Print message 'Chop 'er down!'
+Print message 'Chop 'er down\!'
 ```
 ### Action 61 - Input: GO TRE
 *Conditions*
@@ -740,7 +730,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' carried
 ```
 Item 'Cypress tree(index:5' is removed from the game (put in room 0)
 drops item '-HOLLOW- stump and remains of a felled tree(index:4' into current room
-Print message 'TIMBER. Something fell from the tree top & vanished in the swamp'
+Print message 'TIMBER\. Something fell from the tree top & vanished in the swamp'
 ```
 ### Action 65 - Input: OPE DOO
 *Conditions*
@@ -771,7 +761,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' carried
 ```
 *Actions*
 ```
-Print message 'In 2 words tell me at what...like: AT TREE'
+Print message 'In 2 words tell me at what\.\.\.like: AT TREE'
 set 3 flag
 drops item 'Rusty axe (Magic word `BUNYON` on it)(index:11' into current room
 ```
@@ -800,7 +790,7 @@ item 'Loose fire bricks(index:36)' carried
 ```
 *Actions*
 ```
-Print message 'Somethings too heavy. I fall.'
+Print message 'Somethings too heavy\. I fall\.'
 Death, clear dark flag, move to last room
 ```
 ### Action 71 - Input: DAM LAV
@@ -824,7 +814,7 @@ item 'Loose fire bricks(index:36)' in room with player
 ```
 get item 'Loose fire bricks(index:36', check if can carry
 Print message 'OK'
-Print message 'Its heavy!'
+Print message 'Its heavy\!'
 ```
 ### Action 73 - Input: STO ANY
 *Actions*
@@ -867,7 +857,7 @@ item '\*MAGIC MIRROR\*(index:38)' not in room with player
 ```
 *Actions*
 ```
-Print message 'OK, I threw it.'
+Print message 'OK, I threw it\.'
 Print message 'A voice BOOOOMS out:'
 Print message 'please leave it alone'
 set 3 flag
@@ -880,8 +870,8 @@ item 'Large sleeping dragon(index:27)' in room with player
 ```
 *Actions*
 ```
-Print message 'OK, I threw it.'
-Print message 'It doesn't seem to bother him at all!'
+Print message 'OK, I threw it\.'
+Print message 'It doesn't seem to bother him at all\!'
 set 3 flag
 ```
 ### Action 79 - Input: SCO ANY
@@ -898,9 +888,8 @@ item 'Chigger bites(index:20)' carried
 ```
 clear screen
 Print message 'A voice BOOOOMS out:'
-Print message 'Medicine is good for bites.'
-Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
-and any other verbs you can think of...'
+Print message 'Medicine is good for bites\.'
+Print message 'Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\.'
 ```
 ### Action 81 - Input: HEL ANY
 *Conditions*
@@ -911,9 +900,8 @@ item 'Infected chigger bites(index:21)' carried
 ```
 clear screen
 Print message 'A voice BOOOOMS out:'
-Print message 'Medicine is good for bites.'
-Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
-and any other verbs you can think of...'
+Print message 'Medicine is good for bites\.'
+Print message 'Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\.'
 ```
 ### Action 82 - Input: GO LED
 *Conditions*
@@ -922,7 +910,7 @@ player in room 18
 ```
 *Actions*
 ```
-Print message 'Not here.'
+Print message 'Not here\.'
 ```
 ### Action 83 - Input: GET LAV
 *Conditions*
@@ -931,7 +919,7 @@ item 'Stream of lava(index:34)' in room with player
 ```
 *Actions*
 ```
-Print message 'No, its too hot.'
+Print message 'No, its too hot\.'
 ```
 ### Action 84 - Input: SCR ANY
 *Conditions*
@@ -940,7 +928,7 @@ item 'Very thin black bear(index:25)' in room with player
 ```
 *Actions*
 ```
-Print message 'Bear is so startled that he FELL off the ledge!'
+Print message 'Bear is so startled that he FELL off the ledge\!'
 item 'Slightly woozy bear(index:43)' is moved to room 18
 Item 'Very thin black bear(index:25' is removed from the game (put in room 0)
 ```
@@ -955,8 +943,7 @@ item 'Large sleeping dragon(index:27)' in room with player
 drops item 'Large african bees(index:24' into current room
 drops item '*DRAGON EGGS* (very rare)(index:44' into current room
 Item 'Large sleeping dragon(index:27' is removed from the game (put in room 0)
-Print message 'The bees attack the dragon which gets so annoyed it gets up
-and flys away...'
+Print message 'The bees attack the dragon which gets so annoyed it gets up and flys away\.\.\.'
 ```
 ### Action 86 - Input: AT WIN
 *Conditions*
@@ -1000,7 +987,7 @@ item '\*MAGIC MIRROR\*(index:38)' in room with player
 ```
 Item '*MAGIC MIRROR*(index:38' is removed from the game (put in room 0)
 set 5 flag
-Print message 'OH NO... Bear dodges... CRASH!'
+Print message 'OH NO\.\.\. Bear dodges\.\.\. CRASH\!'
 set 4 flag
 ```
 ### Action 90 - Input: FIN AXE
@@ -1013,7 +1000,7 @@ Print message 'I don't know where it is'
 *Actions*
 ```
 Print message 'Nothing happens'
-Print message 'Maybe if I threw something?...'
+Print message 'Maybe if I threw something?\.\.\.'
 ```
 ### Action 92 - Input: GO TRE
 *Conditions*
@@ -1037,7 +1024,7 @@ item 'Ring of skeleton keys(index:14)' carried
 ```
 Item 'Cypress tree(index:5' is removed from the game (put in room 0)
 drops item '-HOLLOW- stump and remains of a felled tree(index:4' into current room
-Print message 'TIMBER!'
+Print message 'TIMBER\!'
 ```
 ### Action 94 - Input: ATT BEA
 *Conditions*
@@ -1047,7 +1034,7 @@ item 'Very thin black bear(index:25)' in room with player
 *Actions*
 ```
 Print message 'Bear won't let me'
-Print message 'Maybe if I threw something?...'
+Print message 'Maybe if I threw something?\.\.\.'
 ```
 ### Action 95 - Input: ATT DRA
 *Conditions*
@@ -1056,8 +1043,8 @@ item 'Large sleeping dragon(index:27)' in room with player
 ```
 *Actions*
 ```
-Print message 'It doesn't seem to bother him at all!'
-Print message 'Maybe if I threw something?...'
+Print message 'It doesn't seem to bother him at all\!'
+Print message 'Maybe if I threw something?\.\.\.'
 ```
 ### Action 96 - Input: DRI WAT
 *Conditions*
@@ -1066,7 +1053,7 @@ item 'Water in bottle(index:12)' carried
 ```
 *Actions*
 ```
-Print message 'BOY that really hit the spot!'
+Print message 'BOY that really hit the spot\!'
 Item 'Water in bottle(index:12' is removed from the game (put in room 0)
 get item 'Empty bottle(index:13', check if can carry
 ```
@@ -1077,7 +1064,7 @@ item 'Water(index:6)' in room with player
 ```
 *Actions*
 ```
-Print message 'BOY that really hit the spot!'
+Print message 'BOY that really hit the spot\!'
 ```
 ### Action 98 - Input: DRI HON
 *Conditions*
@@ -1086,7 +1073,7 @@ item '\*ROYAL HONEY\*(index:23)' carried or in room with player
 ```
 *Actions*
 ```
-Print message 'BOY that really hit the spot!'
+Print message 'BOY that really hit the spot\!'
 Item '*ROYAL HONEY*(index:23' is removed from the game (put in room 0)
 ```
 ### Action 99 - Input: AT DOO
@@ -1110,7 +1097,7 @@ something carried
 ```
 *Actions*
 ```
-Print message 'Somethings too heavy. I fall.'
+Print message 'Somethings too heavy\. I fall\.'
 ```
 ### Action 101 - Input: SWI ANY
 *Conditions*
@@ -1131,7 +1118,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' not carried
 ```
 *Actions*
 ```
-Print message 'I'm not carrying ax, take inventory!'
+Print message 'I'm not carrying ax, take inventory\!'
 ```
 ### Action 103 - Input: SAY BUN
 *Conditions*
@@ -1142,7 +1129,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' carried
 *Actions*
 ```
 echo noun
-Print message 'Something I'm holding vibrates and...'
+Print message 'Something I'm holding vibrates and\.\.\.'
 item 'Rusty axe (Magic word `BUNYON` on it)(index:11)' is moved to room 25
 set 7 flag
 ```
@@ -1155,7 +1142,7 @@ player not in room 26
 *Actions*
 ```
 echo noun
-Print message 'Something I'm holding vibrates and...'
+Print message 'Something I'm holding vibrates and\.\.\.'
 item 'Rusty axe (Magic word `BUNYON` on it)(index:11)' is moved to room 25
 output inventory
 ```
@@ -1166,7 +1153,7 @@ item 'Lit brass lamp(index:9)' carried or in room with player
 ```
 *Actions*
 ```
-Print message 'No, its too hot.'
+Print message 'No, its too hot\.'
 ```
 ### Action 106 - Input: GET MUD
 *Conditions*
@@ -1186,7 +1173,7 @@ bitflag 8 is false
 ```
 *Actions*
 ```
-Print message 'A glowing Genie appears, drops somehting, then vanishes.'
+Print message 'A glowing Genie appears, drops somehting, then vanishes\.'
 drops item '*DIAMOND RING*(index:48' into current room
 set 8 flag
 ```
@@ -1208,8 +1195,7 @@ bitflag 10 is set
 ```
 *Actions*
 ```
-Print message 'A glowing Genie appears, says `Boy you're selfish`, takes
-something and then makes `ME` vanish!'
+Print message 'A glowing Genie appears, says `Boy you're selfish`, takes something and then makes `ME` vanish\!'
 set 11 flag
 Death, clear dark flag, move to last room
 Item '*DIAMOND RING*(index:48' is removed from the game (put in room 0)
@@ -1222,8 +1208,7 @@ bitflag 9 is set
 ```
 *Actions*
 ```
-Print message 'A glowing Genie appears, says `Boy you're selfish`, takes
-something and then makes `ME` vanish!'
+Print message 'A glowing Genie appears, says `Boy you're selfish`, takes something and then makes `ME` vanish\!'
 set 10 flag
 Death, clear dark flag, move to last room
 Item '*DIAMOND BRACELET*(index:49' is removed from the game (put in room 0)
@@ -1236,7 +1221,7 @@ bitflag 8 is set
 ```
 *Actions*
 ```
-Print message 'A glowing Genie appears, drops somehting, then vanishes.'
+Print message 'A glowing Genie appears, drops somehting, then vanishes\.'
 drops item '*DIAMOND BRACELET*(index:49' into current room
 set 9 flag
 ```
@@ -1247,10 +1232,8 @@ item 'Chigger bites(index:20)' carried
 ```
 *Actions*
 ```
-Print message 'BOY that really hit the spot!'
-Print message '
-My chigger bites are now INFECTED!
-'
+Print message 'BOY that really hit the spot\!'
+Print message ' My chigger bites are now INFECTED\! '
 swap item locations 'Chigger bites(index:20)' and 'Infected chigger bites(index:21)'
 ```
 ### Action 113 - Input: SCR ANY
@@ -1260,8 +1243,8 @@ item 'Infected chigger bites(index:21)' carried
 ```
 *Actions*
 ```
-Print message 'BOY that really hit the spot!'
-Print message 'My bites have rotted my whole body!'
+Print message 'BOY that really hit the spot\!'
+Print message 'My bites have rotted my whole body\!'
 Death, clear dark flag, move to last room
 ```
 ### Action 114 - Input: SWI ANY
@@ -1271,7 +1254,7 @@ player not in room 26
 ```
 *Actions*
 ```
-Print message 'Not here.'
+Print message 'Not here\.'
 ```
 ### Action 115 - Input: WAV ANY
 *Actions*
@@ -1287,7 +1270,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' in room with player
 ```
 Print message 'OK'
 echo noun
-Print message 'The ax vibrated!'
+Print message 'The ax vibrated\!'
 ```
 ### Action 117 - Input: LIG LAM
 *Conditions*
@@ -1296,7 +1279,7 @@ item 'Lit brass lamp(index:9)' carried or in room with player
 ```
 *Actions*
 ```
-Print message 'Lamp burns with a cold flameless blue glow.'
+Print message 'Lamp burns with a cold flameless blue glow\.'
 ```
 ### Action 118 - Input: FIN TRE
 *Actions*
@@ -1355,8 +1338,7 @@ player in room 26
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
-and any other verbs you can think of...'
+Print message 'Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\.'
 Print message 'You may need to say magic words here'
 ```
 ### Action 125 - Input: HEL ANY
@@ -1367,8 +1349,7 @@ player in room 11
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
-and any other verbs you can think of...'
+Print message 'Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\.'
 ```
 ### Action 126 - Input: HEL ANY
 *Conditions*
@@ -1378,8 +1359,7 @@ player in room 19
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
-and any other verbs you can think of...'
+Print message 'Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\.'
 ```
 ### Action 127 - Input: HEL ANY
 *Conditions*
@@ -1389,7 +1369,7 @@ player in room 23
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'There are only 3 ways to wake the Dragon!'
+Print message 'There are only 3 ways to wake the Dragon\!'
 ```
 ### Action 128 - Input: HEL ANY
 *Conditions*
@@ -1429,8 +1409,7 @@ player in room 21
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
-and any other verbs you can think of...'
+Print message 'Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\.'
 ```
 ### Action 132 - Input: HEL ANY
 *Conditions*
@@ -1440,7 +1419,7 @@ player in room 8
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'Read the sign in the meadow!'
+Print message 'Read the sign in the meadow\!'
 ```
 ### Action 133 - Input: UNL DOO
 *Conditions*
@@ -1473,7 +1452,7 @@ item 'Old fashioned brass lamp(index:10)' carried or in room with player
 *Actions*
 ```
 swap item locations 'Old fashioned brass lamp(index:10)' and 'Lit brass lamp(index:9)'
-Print message 'Lamp burns with a cold flameless blue glow.'
+Print message 'Lamp burns with a cold flameless blue glow\.'
 look
 ```
 ### Action 136 - Input: UNL LAM
@@ -1541,7 +1520,7 @@ player not in room 26
 *Actions*
 ```
 move room 17
-Print message 'Something I'm holding vibrates and...'
+Print message 'Something I'm holding vibrates and\.\.\.'
 set darkness flag
 look
 ```
@@ -1553,8 +1532,7 @@ player in room 1
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
-and any other verbs you can think of...'
+Print message 'Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\.'
 ```
 ### Action 144 - Input: THR AXE
 *Conditions*
@@ -1563,7 +1541,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' not carried
 ```
 *Actions*
 ```
-Print message 'I'm not carrying ax, take inventory!'
+Print message 'I'm not carrying ax, take inventory\!'
 ```
 ### Action 145 - Input: HEL ANY
 *Conditions*
@@ -1573,7 +1551,7 @@ player in room 20
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
-Print message 'Blow it up!'
+Print message 'Blow it up\!'
 Print message 'Try the swamp'
 ```
 ### Action 146 - Input: SAY BUN
@@ -1608,18 +1586,18 @@ Print message 'OK'
 *Actions*
 ```
 Print message 'Nothing happens'
-Print message 'You might try examining things...'
+Print message 'You might try examining things\.\.\.'
 ```
 ### Action 150 - Input: CHO ANY
 *Actions*
 ```
 Print message 'Nothing happens'
-Print message 'Maybe if I threw something?...'
+Print message 'Maybe if I threw something?\.\.\.'
 ```
 ### Action 151 - Input: THR ANY
 *Actions*
 ```
-Print message 'Sorry, I can only throw the ax.'
+Print message 'Sorry, I can only throw the ax\.'
 ```
 ### Action 152 - Input: AT ANY
 *Conditions*
@@ -1629,7 +1607,7 @@ bitflag 3 is set
 *Actions*
 ```
 set 3 flag
-Print message 'OK, I threw it.'
+Print message 'OK, I threw it\.'
 Print message 'Nothing happens'
 ```
 ### Action 153 - Input: SAV GAM
@@ -1653,7 +1631,7 @@ Print message 'Nothing happens'
 ### Action 156 - Input: DRI ANY
 *Actions*
 ```
-Print message 'Huh? I don't think so!'
+Print message 'Huh? I don't think so\!'
 ```
 ### Action 157 - Input: DRO WAT
 *Conditions*
@@ -1663,7 +1641,7 @@ player in room 18
 ```
 *Actions*
 ```
-Print message 'Sizzle...'
+Print message 'Sizzle\.\.\.'
 continue with next action
 swap item locations 'Water in bottle(index:12)' and 'Empty bottle(index:13)'
 ```
@@ -1683,7 +1661,7 @@ item 'Glowing \*FIRESTONE\*(index:0)' in room with player
 ```
 *Actions*
 ```
-Print message 'No, its too hot.'
+Print message 'No, its too hot\.'
 ```
 ### Action 160 - Input: GET FIR
 *Conditions*
@@ -1708,21 +1686,17 @@ item 'Large outdoor Advertisement(index:62)' carried or in room with player
 *Actions*
 ```
 clear screen
-Print message '
-Check with your favorite computer dealer for the next Adventure
-program: PIRATE ADVENTURE. If they don't carry `ADVENTURE` have
-them call: 1-305-862-6917 today!
-'
+Print message ' Check with your favorite computer dealer for the next Adventure program: PIRATE ADVENTURE\. If they don't carry `ADVENTURE` have them call: 1\-305\-862\-6917 today\! '
 ```
 ### Action 163 - Input: LOO HOL
 *Actions*
 ```
-Print message 'There's something there all right! Maybe I should go there?'
+Print message 'There's something there all right\! Maybe I should go there?'
 ```
 ### Action 164 - Input: JUM ANY
 *Actions*
 ```
-Print message 'Not here.'
+Print message 'Not here\.'
 ```
 ### Action 165 - Input: ATT SPI
 *Actions*
@@ -1865,12 +1839,12 @@ look
 | 0| top of a tall cypress tree| 1 |
 | 0| damp hollow stump in the swamp| 1, 4 |
 | 0| root chamber under the stump| 3 |
-| 0| semi-dark hole by the root chamber| 4 |
+| 0| semi\-dark hole by the root chamber| 4 |
 | 0| long down sloping hall| 5, 7 |
 | 0| large cavern| 31, 9, 27, 6, 12 |
 | 0| large 8 sided room| 31 |
 | 0| royal anteroom| 7, 20 |
-| 0| *I'm on the shore of a lake| 26, 29, 23 |
+| 0| \*I'm on the shore of a lake| 26, 29, 23 |
 | 0| forest| 11, 11, 23, 11 |
 | 0| maze of pits| 13, 15, 15, 13 |
 | 0| maze of pits| 14, 12 |
@@ -1878,100 +1852,100 @@ look
 | 0| maze of pits| 12, 13, 12, 13 |
 | 0| maze of pits| 17, 14, 17 |
 | 0| maze of pits| 17, 12, 12, 15, 14, 18 |
-| 0| *I'm at the bottom of a very deep chasm. High above me is a pair of ledges. One has a bricked up window across its face the other faces a Throne-room| 17 |
-| 0| *I'm on a narrow ledge by a chasm. Across the chasm is the Throne-room| 20 |
+| 0| \*I'm at the bottom of a very deep chasm\. High above me is a pair of ledges\. One has a bricked up window across its face the other faces a Throne\-room| 17 |
+| 0| \*I'm on a narrow ledge by a chasm\. Across the chasm is the Throne\-room| 20 |
 | 0| royal chamber| 9 |
-| 0| *I'm on a narrow ledge by a Throne-room Across the chasm is another ledge|  |
+| 0| \*I'm on a narrow ledge by a Throne\-room Across the chasm is another ledge|  |
 | 0| throne room| 21 |
 | 0| sunny meadow| 1, 10, 11 |
-| 0| *I think I'm in real trouble now. There's a fellow here with a pitchfork and pointed tail. ...Oh Hell!|  |
+| 0| \*I think I'm in real trouble now\. There's a fellow here with a pitchfork and pointed tail\. \.\.\.Oh Hell\!|  |
 | 0| hidden grove| 11, 1 |
-| 0| quick-sand bog|  |
-| 0| Memory chip of a COMPUTER! I took a wrong turn!| 7 |
-| 0| top of an oak. To the East I see a meadow, beyond that a lake.| 11 |
-| 0| *I'm at the edge of a BOTTOMLESS hole| 10, 1 |
-| 0| *I'm on a ledge just below the rim of the BOTTOMLESS hole. I don't think I want to go down| 29, 24 |
-| 0| long tunnel. I hear buzzing ahead| 8, 7 |
-| 0| *I'm in an endless corridor| 32, 33, 32, 32, 32, 32 |
-| 0| large misty room with strange unreadable letters over all the exits.| 32, 24, 11, 24, 28, 24 |
+| 0| quick\-sand bog|  |
+| 0| Memory chip of a COMPUTER\! I took a wrong turn\!| 7 |
+| 0| top of an oak\. To the East I see a meadow, beyond that a lake\.| 11 |
+| 0| \*I'm at the edge of a BOTTOMLESS hole| 10, 1 |
+| 0| \*I'm on a ledge just below the rim of the BOTTOMLESS hole\. I don't think I want to go down| 29, 24 |
+| 0| long tunnel\. I hear buzzing ahead| 8, 7 |
+| 0| \*I'm in an endless corridor| 32, 33, 32, 32, 32, 32 |
+| 0| large misty room with strange unreadable letters over all the exits\.| 32, 24, 11, 24, 28, 24 |
 ## Messages
 | Index| Text |
 | -----| ---- |
 | 0|  |
 | 1| Nothing happens |
-| 2| Chop 'er down! |
-| 3| BOY that really hit the spot! |
-| 4| Dragon smells something. Awakens & attacks me! |
+| 2| Chop 'er down\! |
+| 3| BOY that really hit the spot\! |
+| 4| Dragon smells something\. Awakens & attacks me\! |
 | 5| Lock shatters |
 | 6| I can't its locked |
-| 7| TIMBER. Something fell from the tree top & vanished in the swamp |
-| 8| TIMBER! |
+| 7| TIMBER\. Something fell from the tree top & vanished in the swamp |
+| 8| TIMBER\! |
 | 9| Lamp is off |
-| 10| Lamp burns with a cold flameless blue glow. |
+| 10| Lamp burns with a cold flameless blue glow\. |
 | 11| I'm bit by a spider |
-| 12|  My chigger bites are now INFECTED!  |
-| 13| My bites have rotted my whole body! |
-| 14| Bear eats the honey and falls asleep. |
+| 12|  My chigger bites are now INFECTED\!  |
+| 13| My bites have rotted my whole body\! |
+| 14| Bear eats the honey and falls asleep\. |
 | 15| Bees sting me |
-| 16| First I need an empty container. |
+| 16| First I need an empty container\. |
 | 17| The bees all suffocated and disappeared |
-| 18| Something I'm holding vibrates and... |
+| 18| Something I'm holding vibrates and\.\.\. |
 | 19| nothing to light it with |
 | 20| Gas bladder blew up |
-| 21| in my hands! |
+| 21| in my hands\! |
 | 22| gas needs to be contained before it will burn |
-| 23| Gas dissipates. (I think you blew it) |
+| 23| Gas dissipates\. \(I think you blew it\) |
 | 24| That won't ignite |
 | 25| How? |
 | 26| Bear won't let me |
-| 27| `Don't waste honey, get mad instead! Dam lava!?` |
-| 28| Bees madden bear, bear then attacks me! |
+| 27| `Don't waste honey, get mad instead\! Dam lava\!?` |
+| 28| Bees madden bear, bear then attacks me\! |
 | 29| It soaks into the ground |
-| 30| In 2 words tell me at what...like: AT TREE |
-| 31| OH NO... Bear dodges... CRASH! |
-| 32| Its heavy! |
-| 33| Somethings too heavy. I fall. |
+| 30| In 2 words tell me at what\.\.\.like: AT TREE |
+| 31| OH NO\.\.\. Bear dodges\.\.\. CRASH\! |
+| 32| Its heavy\! |
+| 33| Somethings too heavy\. I fall\. |
 | 34| To stop game say QUIT |
 | 35| Mirror hits floor and shatters into a MILLION pieces |
 | 36| Mirror lands softly on rug, lights up and says: |
-| 37| You lost *ALL* treasures. |
-| 38| I'm not carrying ax, take inventory! |
-| 39| It doesn't seem to bother him at all! |
-| 40| The mud dried up and fell off. |
-| 41| Bear is so startled that he FELL off the ledge! |
-| 42| ` DRAGON STING ` and fades. I don't get it, I hope you do. |
-| 43| The bees attack the dragon which gets so annoyed it gets up and flys away... |
+| 37| You lost \*ALL\* treasures\. |
+| 38| I'm not carrying ax, take inventory\! |
+| 39| It doesn't seem to bother him at all\! |
+| 40| The mud dried up and fell off\. |
+| 41| Bear is so startled that he FELL off the ledge\! |
+| 42| ` DRAGON STING ` and fades\. I don't get it, I hope you do\. |
+| 43| The bees attack the dragon which gets so annoyed it gets up and flys away\.\.\. |
 | 44| Lamp is now full & lit |
-| 45|  I'm bitten by chiggers.  |
-| 46| There's something there all right! Maybe I should go there? |
-| 47| Maybe if I threw something?... |
-| 48| Too dry, the fish died. |
-| 49| A glowing Genie appears, drops somehting, then vanishes. |
-| 50| A glowing Genie appears, says `Boy you're selfish`, takes something and then makes `ME` vanish! |
-| 51| No, its too hot. |
-| 52| Not here. |
+| 45|  I'm bitten by chiggers\.  |
+| 46| There's something there all right\! Maybe I should go there? |
+| 47| Maybe if I threw something?\.\.\. |
+| 48| Too dry, the fish died\. |
+| 49| A glowing Genie appears, drops somehting, then vanishes\. |
+| 50| A glowing Genie appears, says `Boy you're selfish`, takes something and then makes `ME` vanish\! |
+| 51| No, its too hot\. |
+| 52| Not here\. |
 | 53| Try the swamp |
-| 54| Sizzle... |
-| 55| Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of... |
-| 56| There are only 3 ways to wake the Dragon! |
+| 54| Sizzle\.\.\. |
+| 55| Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of\.\.\. |
+| 56| There are only 3 ways to wake the Dragon\! |
 | 57| Remember you can always say `HELP` |
-| 58| Read the sign in the meadow! |
+| 58| Read the sign in the meadow\! |
 | 59| You may need to say magic words here |
 | 60| A voice BOOOOMS out: |
 | 61| please leave it alone |
-| 62| Sorry, I can only throw the ax. |
-| 63| Medicine is good for bites. |
+| 62| Sorry, I can only throw the ax\. |
+| 63| Medicine is good for bites\. |
 | 64| I don't know where it is |
-| 65|  Welcome to Adventure number: 1 `ADVENTURELAND`. In this Adventure you're to find *TREASURES* & store them away.  To see how well you're doing say: `SCORE` |
-| 66| Blow it up! |
-| 67| Fish have escaped back to the lake. |
+| 65|  Welcome to Adventure number: 1 `ADVENTURELAND`\. In this Adventure you're to find \*TREASURES\* & store them away\.  To see how well you're doing say: `SCORE` |
+| 66| Blow it up\! |
+| 67| Fish have escaped back to the lake\. |
 | 68| OK |
-| 69| Huh? I don't think so! |
-| 70| You might try examining things... |
+| 69| Huh? I don't think so\! |
+| 70| You might try examining things\.\.\. |
 | 71| What? |
-| 72| OK, I threw it. |
-| 73|  Check with your favorite computer dealer for the next Adventure program: PIRATE ADVENTURE. If they don't carry `ADVENTURE` have them call: 1-305-862-6917 today!  |
-| 74| The ax vibrated! |
+| 72| OK, I threw it\. |
+| 73|  Check with your favorite computer dealer for the next Adventure program: PIRATE ADVENTURE\. If they don't carry `ADVENTURE` have them call: 1\-305\-862\-6917 today\!  |
+| 74| The ax vibrated\! |
 | 75| I see nothing special |
 ## Items
 | Index| Description| GetDrop| RoomID |
@@ -2006,8 +1980,7 @@ look
 | 27| Large sleeping dragon| | 23 |
 | 28| Flint & steel| FLI| 30 |
 | 29| \*Thick PERSIAN RUG\*| RUG| 17 |
-| 30| Sign: `magic word's AWAY\! Look la\.\.\.`
-\(Rest of sign is missing\!\)| | 18 |
+| 30| Sign: `magic word's AWAY\! Look la\.\.\.` \(Rest of sign is missing\!\)| | 18 |
 | 31| Distended gas bladder| BLA| 0 |
 | 32| Bricked up window| | 20 |
 | 33| Sign here says `In many cases mud is good\. In others\.\.\.`| | 23 |
