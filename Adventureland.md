@@ -1,4 +1,4 @@
--Adventureland
+#Adventureland
 *Table of Contents*
 -[Header](#Header)
 -[Actions](#Actions)
@@ -7,7 +7,7 @@
 -[Rooms](#Rooms)
 -[Messages](#Messages)
 -[Items](#Items)
---Header
+##Header
 | Property| Value |
 | --------| ----- |
 | Unknown| 5953 |
@@ -22,8 +22,8 @@
 | lightDuration| 125 |
 | numMessages| 76 |
 | treasureRoom| 3 |
---Actions
----Action 0 - FISH ESCAPE - Probability: 75
+##Actions
+###Action 0 - FISH ESCAPE - Probability: 75
 *Conditions*
 ```
 item '\*GOLDEN FISH\*(index:8)' carried
@@ -34,7 +34,7 @@ item '\*GOLDEN NET\*(index:19)' not carried
 Print message 'Fish have escaped back to the lake.'
 item '*GOLDEN FISH*(index:8)' is moved to room 10
 ```
----Action 1 - DIE BITES - Probability: 10
+###Action 1 - DIE BITES - Probability: 10
 *Conditions*
 ```
 item 'Infected chigger bites(index:21)' carried
@@ -45,7 +45,7 @@ player not in room 33
 Print message 'My bites have rotted my whole body!'
 Death, clear dark flag, move to last room
 ```
----Action 2 - BITE INFECT - Probability: 10
+###Action 2 - BITE INFECT - Probability: 10
 *Conditions*
 ```
 item 'Chigger bites(index:20)' carried
@@ -59,7 +59,7 @@ My chigger bites are now INFECTED!
 take item 'Infected chigger bites(index:21', no check done to see if can carry
 Item 'Chigger bites(index:20' is removed from the game (put in room 0)
 ```
----Action 3 - BEES DIE - Probability: 8
+###Action 3 - BEES DIE - Probability: 8
 *Conditions*
 ```
 item 'Bees in a bottle(index:26)' carried or in room with player
@@ -70,7 +70,7 @@ bitflag 17 is false
 Print message 'The bees all suffocated and disappeared'
 swap item locations 'Bees in a bottle(index:26)' and 'Empty bottle(index:13)'
 ```
----Action 4 - HIT MIRROR - Probability: 100
+###Action 4 - HIT MIRROR - Probability: 100
 *Conditions*
 ```
 bitflag 5 is set
@@ -82,7 +82,7 @@ item 'Broken glass(index:41)' is moved to room 21
 set 5 flag
 look
 ```
----Action 5 - IN HADES - Probability: 100
+###Action 5 - IN HADES - Probability: 100
 *Conditions*
 ```
 player in room 24
@@ -92,7 +92,7 @@ player in room 24
 Print message 'You lost *ALL* treasures.'
 game over
 ```
----Action 6 - MUD OFF - Probability: 5
+###Action 6 - MUD OFF - Probability: 5
 *Conditions*
 ```
 item 'Evil smelling mud(index:7)' carried
@@ -103,7 +103,7 @@ item 'Water in bottle(index:12)' not carried
 Print message 'The mud dried up and fell off.'
 item 'Evil smelling mud(index:7)' is moved to room 1
 ```
----Action 7 - BIT CHIG - Probability: 8
+###Action 7 - BIT CHIG - Probability: 8
 *Conditions*
 ```
 item 'Chigger bites(index:20)' not carried
@@ -118,7 +118,7 @@ Print message '
 I'm bitten by chiggers.
 '
 ```
----Action 8 - BEE STING - Probability: 8
+###Action 8 - BEE STING - Probability: 8
 *Conditions*
 ```
 item 'Large african bees(index:24)' in room with player
@@ -129,7 +129,7 @@ item 'Evil smelling mud(index:7)' not carried or in room with player
 Print message 'Bees sting me'
 Death, clear dark flag, move to last room
 ```
----Action 9 - LITE - Probability: 100
+###Action 9 - LITE - Probability: 100
 *Conditions*
 ```
 player in room 5
@@ -140,7 +140,7 @@ bitflag 15 is set
 clear darkness flag
 look
 ```
----Action 10 - FISH DIE - Probability: 50
+###Action 10 - FISH DIE - Probability: 50
 *Conditions*
 ```
 item '\*GOLDEN FISH\*(index:8)' carried
@@ -152,7 +152,7 @@ Print message 'Too dry, the fish died.'
 Item '*GOLDEN FISH*(index:8' is removed from the game (put in room 0)
 get item 'Dead fish(index:55', check if can carry
 ```
----Action 11 - MOVE OX - Probability: 100
+###Action 11 - MOVE OX - Probability: 100
 *Conditions*
 ```
 bitflag 7 is set
@@ -163,7 +163,7 @@ set 7 flag
 item '*Small statue of a BLUE OX*(index:47)' is moved to room 25
 output inventory
 ```
----Action 12 - GET CHIG - Probability: 30
+###Action 12 - GET CHIG - Probability: 30
 *Conditions*
 ```
 item 'Chiggers(index:42)' carried
@@ -178,7 +178,7 @@ Print message '
 I'm bitten by chiggers.
 '
 ```
----Action 13 - MUD DRAGON - Probability: 50
+###Action 13 - MUD DRAGON - Probability: 50
 *Conditions*
 ```
 item 'Large sleeping dragon(index:27)' in room with player
@@ -190,7 +190,7 @@ clear screen
 Print message 'Dragon smells something. Awakens & attacks me!'
 Death, clear dark flag, move to last room
 ```
----Action 14 - BLAST WALL - Probability: 100
+###Action 14 - BLAST WALL - Probability: 100
 *Conditions*
 ```
 bitflag 12 is set
@@ -202,7 +202,7 @@ drops item 'Loose fire bricks(index:36' into current room
 Item 'Bricked up window(index:32' is removed from the game (put in room 0)
 drops item 'Bricked up window with a hole in it(index:35' into current room
 ```
----Action 15 - BLAS DRAGON - Probability: 100
+###Action 15 - BLAS DRAGON - Probability: 100
 *Conditions*
 ```
 bitflag 12 is set
@@ -213,7 +213,7 @@ item 'Large sleeping dragon(index:27)' in room with player
 drops item 'Smoking hole. pieces of dragon and gore.(index:52' into current room
 Item 'Large sleeping dragon(index:27' is removed from the game (put in room 0)
 ```
----Action 16 - 1ST MIRROR CLUE - Probability: 100
+###Action 16 - 1ST MIRROR CLUE - Probability: 100
 *Conditions*
 ```
 bitflag 1 is set
@@ -225,7 +225,7 @@ Print message '` DRAGON STING ` and fades. I don't get it, I hope you do.'
 set 1 flag
 set 2 flag
 ```
----Action 17 - BEAR MAD - Probability: 100
+###Action 17 - BEAR MAD - Probability: 100
 *Conditions*
 ```
 bitflag 14 is set
@@ -236,7 +236,7 @@ take item 'Empty bottle(index:13', no check done to see if can carry
 set 14 flag
 Death, clear dark flag, move to last room
 ```
----Action 18 - RESET BLAST - Probability: 100
+###Action 18 - RESET BLAST - Probability: 100
 *Conditions*
 ```
 bitflag 12 is set
@@ -246,7 +246,7 @@ bitflag 12 is set
 look
 set 12 flag
 ```
----Action 19 - INTRO - Probability: 100
+###Action 19 - INTRO - Probability: 100
 *Conditions*
 ```
 bitflag 13 is false
@@ -262,7 +262,7 @@ In this Adventure you're to find *TREASURES* & store them away.
 To see how well you're doing say: `SCORE`'
 Print message 'Remember you can always say `HELP`'
 ```
----Action 20 - 2ND MIRROR CLUE - Probability: 100
+###Action 20 - 2ND MIRROR CLUE - Probability: 100
 *Conditions*
 ```
 bitflag 1 is set
@@ -274,7 +274,7 @@ Print message '`Don't waste honey, get mad instead! Dam lava!?`'
 set 1 flag
 set 2 flag
 ```
----Action 21 - DEAD LAMP - Probability: 100
+###Action 21 - DEAD LAMP - Probability: 100
 *Conditions*
 ```
 bitflag 16 is set
@@ -285,7 +285,7 @@ set 16 flag
 swap item locations 'Empty lamp(index:60)' and 'Lit brass lamp(index:9)'
 look
 ```
----Action 22 - MUDDY RUG - Probability: 100
+###Action 22 - MUDDY RUG - Probability: 100
 *Conditions*
 ```
 player in room 26
@@ -295,7 +295,7 @@ item '\*Thick PERSIAN RUG\*(index:29)' carried or in room with player
 ```
 swap item locations '*Thick PERSIAN RUG*(index:29)' and 'Muddy worthless old rug(index:61)'
 ```
----Action 23 - Input: LOO LAV
+###Action 23 - Input: LOO LAV
 *Conditions*
 ```
 item 'Stream of lava(index:34)' in room with player
@@ -304,7 +304,7 @@ item 'Stream of lava(index:34)' in room with player
 ```
 Print message 'There's something there all right! Maybe I should go there?'
 ```
----Action 24 - Input: LOO TRE
+###Action 24 - Input: LOO TRE
 *Conditions*
 ```
 item '\-HOLLOW\- stump and remains of a felled tree(index:4)' in room with player
@@ -313,7 +313,7 @@ item '\-HOLLOW\- stump and remains of a felled tree(index:4)' in room with playe
 ```
 Print message 'There's something there all right! Maybe I should go there?'
 ```
----Action 25 - Input: GET MUD
+###Action 25 - Input: GET MUD
 *Conditions*
 ```
 item 'Evil smelling mud(index:7)' in room with player
@@ -326,7 +326,7 @@ get item 'Evil smelling mud(index:7', check if can carry
 Print message 'OK'
 Print message 'BOY that really hit the spot!'
 ```
----Action 26 - Input: GET HON
+###Action 26 - Input: GET HON
 *Conditions*
 ```
 item '\*ROYAL HONEY\*(index:23)' in room with player
@@ -338,7 +338,7 @@ item 'Large african bees(index:24)' in room with player
 Print message 'Bees sting me'
 Death, clear dark flag, move to last room
 ```
----Action 27 - Input: GET MUD
+###Action 27 - Input: GET MUD
 *Conditions*
 ```
 item 'Evil smelling mud(index:7)' in room with player
@@ -351,7 +351,7 @@ get item 'Evil smelling mud(index:7', check if can carry
 Print message 'OK'
 Print message 'BOY that really hit the spot!'
 ```
----Action 28 - Input: DRO HON
+###Action 28 - Input: DRO HON
 *Conditions*
 ```
 item '\*ROYAL HONEY\*(index:23)' carried
@@ -364,7 +364,7 @@ Print message 'Bear eats the honey and falls asleep.'
 drops item 'Sleeping bear(index:39' into current room
 Item 'Very thin black bear(index:25' is removed from the game (put in room 0)
 ```
----Action 29 - Input: DRO HON
+###Action 29 - Input: DRO HON
 *Conditions*
 ```
 item '\*ROYAL HONEY\*(index:23)' carried
@@ -373,7 +373,7 @@ item '\*ROYAL HONEY\*(index:23)' carried
 ```
 drops item '*ROYAL HONEY*(index:23' into current room
 ```
----Action 30 - Input: GET BEE
+###Action 30 - Input: GET BEE
 *Conditions*
 ```
 item 'Large african bees(index:24)' in room with player
@@ -384,7 +384,7 @@ item 'Evil smelling mud(index:7)' not carried
 Print message 'Bees sting me'
 Death, clear dark flag, move to last room
 ```
----Action 31 - Input: GET BEE
+###Action 31 - Input: GET BEE
 *Conditions*
 ```
 item 'Large african bees(index:24)' in room with player
@@ -395,7 +395,7 @@ item 'Empty bottle(index:13)' not carried
 ```
 Print message 'First I need an empty container.'
 ```
----Action 32 - Input: GET BEE
+###Action 32 - Input: GET BEE
 *Conditions*
 ```
 item 'Large african bees(index:24)' in room with player
@@ -407,12 +407,12 @@ item 'Empty bottle(index:13)' carried
 swap item locations 'Empty bottle(index:13)' and 'Bees in a bottle(index:26)'
 Print message 'OK'
 ```
----Action 33 - Input: GET INV
+###Action 33 - Input: GET INV
 *Actions*
 ```
 output inventory
 ```
----Action 34 - Input: CRO LAV
+###Action 34 - Input: CRO LAV
 *Conditions*
 ```
 player in room 18
@@ -421,12 +421,12 @@ player in room 18
 ```
 Print message 'No, its too hot.'
 ```
----Action 35 - Input: INV ANY
+###Action 35 - Input: INV ANY
 *Actions*
 ```
 output inventory
 ```
----Action 36 - Input: SAY AWA
+###Action 36 - Input: SAY AWA
 *Conditions*
 ```
 item '\*Thick PERSIAN RUG\*(index:29)' carried
@@ -439,7 +439,7 @@ Print message 'Something I'm holding vibrates and...'
 clear darkness flag
 look
 ```
----Action 37 - Input: LIG ANY
+###Action 37 - Input: LIG ANY
 *Conditions*
 ```
 item 'Flint & steel(index:28)' not carried
@@ -448,7 +448,7 @@ item 'Flint & steel(index:28)' not carried
 ```
 Print message 'nothing to light it with'
 ```
----Action 38 - Input: LIG GAS
+###Action 38 - Input: LIG GAS
 *Conditions*
 ```
 item 'Distended gas bladder(index:31)' carried
@@ -461,7 +461,7 @@ Print message 'in my hands!'
 Death, clear dark flag, move to last room
 Item 'Distended gas bladder(index:31' is removed from the game (put in room 0)
 ```
----Action 39 - Input: MAK HOL
+###Action 39 - Input: MAK HOL
 *Conditions*
 ```
 item 'Bees in a bottle(index:26)' carried or in room with player
@@ -471,7 +471,7 @@ item 'Bees in a bottle(index:26)' carried or in room with player
 set 17 flag
 Print message 'OK'
 ```
----Action 40 - Input: LIG GAS
+###Action 40 - Input: LIG GAS
 *Conditions*
 ```
 item 'Distended gas bladder(index:31)' in room with player
@@ -484,7 +484,7 @@ Item 'Distended gas bladder(index:31' is removed from the game (put in room 0)
 set 12 flag
 Print message 'Gas bladder blew up'
 ```
----Action 41 - Input: GO LED
+###Action 41 - Input: GO LED
 *Conditions*
 ```
 player in room 20
@@ -496,7 +496,7 @@ move room 19
 clear screen
 look
 ```
----Action 42 - Input: GET GAS
+###Action 42 - Input: GET GAS
 *Conditions*
 ```
 player in room 1
@@ -506,7 +506,7 @@ item 'Empty wine bladder(index:40)' not carried
 ```
 Print message 'First I need an empty container.'
 ```
----Action 43 - Input: GET GAS
+###Action 43 - Input: GET GAS
 *Conditions*
 ```
 player in room 1
@@ -517,7 +517,7 @@ item 'Empty wine bladder(index:40)' carried
 swap item locations 'Empty wine bladder(index:40)' and 'Distended gas bladder(index:31)'
 Print message 'OK'
 ```
----Action 44 - Input: DRO GAS
+###Action 44 - Input: DRO GAS
 *Conditions*
 ```
 item 'Distended gas bladder(index:31)' carried
@@ -528,7 +528,7 @@ swap item locations 'Distended gas bladder(index:31)' and 'Empty wine bladder(in
 Print message 'OK'
 Print message 'Gas dissipates. (I think you blew it)'
 ```
----Action 45 - Input: LIG GAS
+###Action 45 - Input: LIG GAS
 *Conditions*
 ```
 item 'Swamp gas(index:18)' in room with player
@@ -538,12 +538,12 @@ item 'Flint & steel(index:28)' carried
 ```
 Print message 'gas needs to be contained before it will burn'
 ```
----Action 46 - Input: FIN SWA
+###Action 46 - Input: FIN SWA
 *Actions*
 ```
 Print message 'I don't know where it is'
 ```
----Action 47 - Input: GO THR
+###Action 47 - Input: GO THR
 *Conditions*
 ```
 player in room 19
@@ -552,7 +552,7 @@ player in room 19
 ```
 Print message 'How?'
 ```
----Action 48 - Input: GET MIR
+###Action 48 - Input: GET MIR
 *Conditions*
 ```
 item '\*MAGIC MIRROR\*(index:38)' in room with player
@@ -563,7 +563,7 @@ item 'Very thin black bear(index:25)' not in room with player
 get item '*MAGIC MIRROR*(index:38', check if can carry
 Print message 'OK'
 ```
----Action 49 - Input: DRO MIR
+###Action 49 - Input: DRO MIR
 *Conditions*
 ```
 item '\*MAGIC MIRROR\*(index:38)' carried
@@ -575,7 +575,7 @@ drops item '*MAGIC MIRROR*(index:38' into current room
 Print message 'Mirror lands softly on rug, lights up and says:'
 set 1 flag
 ```
----Action 50 - Input: DRI FRU
+###Action 50 - Input: DRI FRU
 *Conditions*
 ```
 item '\*JEWELED FRUIT\*(index:46)' carried
@@ -585,7 +585,7 @@ item '\*JEWELED FRUIT\*(index:46)' carried
 Print message 'BOY that really hit the spot!'
 Item '*JEWELED FRUIT*(index:46' is removed from the game (put in room 0)
 ```
----Action 51 - Input: GET WAT
+###Action 51 - Input: GET WAT
 *Conditions*
 ```
 item 'Water(index:6)' in room with player
@@ -597,7 +597,7 @@ Item 'Empty bottle(index:13' is removed from the game (put in room 0)
 get item 'Water in bottle(index:12', check if can carry
 Print message 'OK'
 ```
----Action 52 - Input: JUM ANY
+###Action 52 - Input: JUM ANY
 *Conditions*
 ```
 player in room 19
@@ -608,7 +608,7 @@ item 'Loose fire bricks(index:36)' not carried
 move room 21
 look
 ```
----Action 53 - Input: JUM ANY
+###Action 53 - Input: JUM ANY
 *Conditions*
 ```
 player in room 21
@@ -618,7 +618,7 @@ player in room 21
 move room 19
 look
 ```
----Action 54 - Input: GO THR
+###Action 54 - Input: GO THR
 *Conditions*
 ```
 player in room 21
@@ -628,7 +628,7 @@ item 'Very thin black bear(index:25)' in room with player
 ```
 Print message 'Bear won't let me'
 ```
----Action 55 - Input: GO THR
+###Action 55 - Input: GO THR
 *Conditions*
 ```
 player in room 21
@@ -640,7 +640,7 @@ move room 22
 clear screen
 look
 ```
----Action 56 - BUILD DAM - Input: MAK LAV
+###Action 56 - BUILD DAM - Input: MAK LAV
 *Conditions*
 ```
 item 'Loose fire bricks(index:36)' carried or in room with player
@@ -652,7 +652,7 @@ swap item locations 'Glowing *FIRESTONE*(index:0)' and 'Stream of lava(index:34)
 drops item 'Lava stream with brick dam(index:45' into current room
 look
 ```
----Action 57 - Input: GO LAV
+###Action 57 - Input: GO LAV
 *Conditions*
 ```
 player in room 18
@@ -661,7 +661,7 @@ player in room 18
 ```
 Print message 'No, its too hot.'
 ```
----Action 58 - Input: DRO BEE
+###Action 58 - Input: DRO BEE
 *Conditions*
 ```
 item 'Bees in a bottle(index:26)' carried
@@ -674,7 +674,7 @@ Item 'Bees in a bottle(index:26' is removed from the game (put in room 0)
 drops item 'Large african bees(index:24' into current room
 set 14 flag
 ```
----Action 59 - Input: GET WAT
+###Action 59 - Input: GET WAT
 *Conditions*
 ```
 item 'Water(index:6)' in room with player
@@ -684,7 +684,7 @@ item 'Empty bottle(index:13)' not carried
 ```
 Print message 'First I need an empty container.'
 ```
----Action 60 - Input: REA WEB
+###Action 60 - Input: REA WEB
 *Conditions*
 ```
 item 'Spider web with writing on it(index:3)' in room with player
@@ -693,7 +693,7 @@ item 'Spider web with writing on it(index:3)' in room with player
 ```
 Print message 'Chop 'er down!'
 ```
----Action 61 - Input: GO TRE
+###Action 61 - Input: GO TRE
 *Conditions*
 ```
 item 'Cypress tree(index:5)' in room with player
@@ -704,7 +704,7 @@ move room 2
 clear screen
 look
 ```
----Action 62 - Input: DRO WAT
+###Action 62 - Input: DRO WAT
 *Conditions*
 ```
 item 'Water in bottle(index:12)' carried
@@ -716,7 +716,7 @@ swap item locations 'Water in bottle(index:12)' and 'Empty bottle(index:13)'
 Print message 'OK'
 Print message 'It soaks into the ground'
 ```
----Action 63 - Input: FIL LAM
+###Action 63 - Input: FIL LAM
 *Conditions*
 ```
 item 'Patches of `OILY` slime(index:22)' carried or in room with player
@@ -729,7 +729,7 @@ Item 'Empty lamp(index:60' is removed from the game (put in room 0)
 Print message 'Lamp is now full & lit'
 refill lamp
 ```
----Action 64 - Input: CHO TRE
+###Action 64 - Input: CHO TRE
 *Conditions*
 ```
 item 'Cypress tree(index:5)' in room with player
@@ -742,7 +742,7 @@ Item 'Cypress tree(index:5' is removed from the game (put in room 0)
 drops item '-HOLLOW- stump and remains of a felled tree(index:4' into current room
 Print message 'TIMBER. Something fell from the tree top & vanished in the swamp'
 ```
----Action 65 - Input: OPE DOO
+###Action 65 - Input: OPE DOO
 *Conditions*
 ```
 player in room 5
@@ -753,7 +753,7 @@ item 'Ring of skeleton keys(index:14)' not carried
 ```
 Print message 'I can't its locked'
 ```
----Action 66 - Input: UNL DOO
+###Action 66 - Input: UNL DOO
 *Conditions*
 ```
 player in room 5
@@ -764,7 +764,7 @@ item 'Ring of skeleton keys(index:14)' not carried
 ```
 Print message 'I can't its locked'
 ```
----Action 67 - Input: THR AXE
+###Action 67 - Input: THR AXE
 *Conditions*
 ```
 item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' carried
@@ -775,7 +775,7 @@ Print message 'In 2 words tell me at what...like: AT TREE'
 set 3 flag
 drops item 'Rusty axe (Magic word `BUNYON` on it)(index:11' into current room
 ```
----Action 68 - Input: OPE DOO
+###Action 68 - Input: OPE DOO
 *Conditions*
 ```
 item 'Locked door(index:16)' in room with player
@@ -787,12 +787,12 @@ Item 'Locked door(index:16' is removed from the game (put in room 0)
 drops item 'Open door with a hallway beyond(index:17' into current room
 look
 ```
----Action 69 - Input: CRO ANY
+###Action 69 - Input: CRO ANY
 *Actions*
 ```
 Print message 'How?'
 ```
----Action 70 - Input: JUM ANY
+###Action 70 - Input: JUM ANY
 *Conditions*
 ```
 player in room 19
@@ -803,7 +803,7 @@ item 'Loose fire bricks(index:36)' carried
 Print message 'Somethings too heavy. I fall.'
 Death, clear dark flag, move to last room
 ```
----Action 71 - Input: DAM LAV
+###Action 71 - Input: DAM LAV
 *Conditions*
 ```
 item 'Loose fire bricks(index:36)' carried or in room with player
@@ -815,7 +815,7 @@ swap item locations 'Glowing *FIRESTONE*(index:0)' and 'Stream of lava(index:34)
 drops item 'Lava stream with brick dam(index:45' into current room
 look
 ```
----Action 72 - Input: GET BRI
+###Action 72 - Input: GET BRI
 *Conditions*
 ```
 item 'Loose fire bricks(index:36)' in room with player
@@ -826,18 +826,18 @@ get item 'Loose fire bricks(index:36', check if can carry
 Print message 'OK'
 Print message 'Its heavy!'
 ```
----Action 73 - Input: STO ANY
+###Action 73 - Input: STO ANY
 *Actions*
 ```
 Print message 'To stop game say QUIT'
 ```
----Action 74 - Input: QUI ANY
+###Action 74 - Input: QUI ANY
 *Actions*
 ```
 score
 game over
 ```
----Action 75 - Input: GET MIR
+###Action 75 - Input: GET MIR
 *Conditions*
 ```
 item '\*MAGIC MIRROR\*(index:38)' in room with player
@@ -847,7 +847,7 @@ item 'Very thin black bear(index:25)' in room with player
 ```
 Print message 'Bear won't let me'
 ```
----Action 76 - Input: DRO MIR
+###Action 76 - Input: DRO MIR
 *Conditions*
 ```
 item '\*MAGIC MIRROR\*(index:38)' carried
@@ -859,7 +859,7 @@ Print message 'Mirror hits floor and shatters into a MILLION pieces'
 drops item 'Broken glass(index:41' into current room
 Item '*MAGIC MIRROR*(index:38' is removed from the game (put in room 0)
 ```
----Action 77 - Input: AT BEA
+###Action 77 - Input: AT BEA
 *Conditions*
 ```
 bitflag 3 is set
@@ -872,7 +872,7 @@ Print message 'A voice BOOOOMS out:'
 Print message 'please leave it alone'
 set 3 flag
 ```
----Action 78 - Input: AT DRA
+###Action 78 - Input: AT DRA
 *Conditions*
 ```
 bitflag 3 is set
@@ -884,12 +884,12 @@ Print message 'OK, I threw it.'
 Print message 'It doesn't seem to bother him at all!'
 set 3 flag
 ```
----Action 79 - Input: SCO ANY
+###Action 79 - Input: SCO ANY
 *Actions*
 ```
 score
 ```
----Action 80 - Input: HEL ANY
+###Action 80 - Input: HEL ANY
 *Conditions*
 ```
 item 'Chigger bites(index:20)' carried
@@ -902,7 +902,7 @@ Print message 'Medicine is good for bites.'
 Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
 and any other verbs you can think of...'
 ```
----Action 81 - Input: HEL ANY
+###Action 81 - Input: HEL ANY
 *Conditions*
 ```
 item 'Infected chigger bites(index:21)' carried
@@ -915,7 +915,7 @@ Print message 'Medicine is good for bites.'
 Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
 and any other verbs you can think of...'
 ```
----Action 82 - Input: GO LED
+###Action 82 - Input: GO LED
 *Conditions*
 ```
 player in room 18
@@ -924,7 +924,7 @@ player in room 18
 ```
 Print message 'Not here.'
 ```
----Action 83 - Input: GET LAV
+###Action 83 - Input: GET LAV
 *Conditions*
 ```
 item 'Stream of lava(index:34)' in room with player
@@ -933,7 +933,7 @@ item 'Stream of lava(index:34)' in room with player
 ```
 Print message 'No, its too hot.'
 ```
----Action 84 - Input: SCR ANY
+###Action 84 - Input: SCR ANY
 *Conditions*
 ```
 item 'Very thin black bear(index:25)' in room with player
@@ -944,7 +944,7 @@ Print message 'Bear is so startled that he FELL off the ledge!'
 item 'Slightly woozy bear(index:43)' is moved to room 18
 Item 'Very thin black bear(index:25' is removed from the game (put in room 0)
 ```
----Action 85 - Input: DRO BEE
+###Action 85 - Input: DRO BEE
 *Conditions*
 ```
 item 'Bees in a bottle(index:26)' carried
@@ -958,7 +958,7 @@ Item 'Large sleeping dragon(index:27' is removed from the game (put in room 0)
 Print message 'The bees attack the dragon which gets so annoyed it gets up
 and flys away...'
 ```
----Action 86 - Input: AT WIN
+###Action 86 - Input: AT WIN
 *Conditions*
 ```
 bitflag 3 is set
@@ -970,7 +970,7 @@ Print message 'Nothing happens'
 Print message 'A voice BOOOOMS out:'
 Print message 'Remember you can always say `HELP`'
 ```
----Action 87 - Input: OPE DOO
+###Action 87 - Input: OPE DOO
 *Conditions*
 ```
 item 'Open door with a hallway beyond(index:17)' in room with player
@@ -979,7 +979,7 @@ item 'Open door with a hallway beyond(index:17)' in room with player
 ```
 look
 ```
----Action 88 - Input: GO HOL
+###Action 88 - Input: GO HOL
 *Conditions*
 ```
 item 'Bricked up window with a hole in it(index:35)' in room with player
@@ -990,7 +990,7 @@ clear screen
 move room 19
 look
 ```
----Action 89 - Input: AT BEA
+###Action 89 - Input: AT BEA
 *Conditions*
 ```
 bitflag 3 is set
@@ -1003,19 +1003,19 @@ set 5 flag
 Print message 'OH NO... Bear dodges... CRASH!'
 set 4 flag
 ```
----Action 90 - Input: FIN AXE
+###Action 90 - Input: FIN AXE
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
 Print message 'I don't know where it is'
 ```
----Action 91 - Input: WAK ANY
+###Action 91 - Input: WAK ANY
 *Actions*
 ```
 Print message 'Nothing happens'
 Print message 'Maybe if I threw something?...'
 ```
----Action 92 - Input: GO TRE
+###Action 92 - Input: GO TRE
 *Conditions*
 ```
 item '\-HOLLOW\- stump and remains of a felled tree(index:4)' in room with player
@@ -1026,7 +1026,7 @@ move room 3
 clear screen
 look
 ```
----Action 93 - Input: CHO TRE
+###Action 93 - Input: CHO TRE
 *Conditions*
 ```
 item 'Cypress tree(index:5)' in room with player
@@ -1039,7 +1039,7 @@ Item 'Cypress tree(index:5' is removed from the game (put in room 0)
 drops item '-HOLLOW- stump and remains of a felled tree(index:4' into current room
 Print message 'TIMBER!'
 ```
----Action 94 - Input: ATT BEA
+###Action 94 - Input: ATT BEA
 *Conditions*
 ```
 item 'Very thin black bear(index:25)' in room with player
@@ -1049,7 +1049,7 @@ item 'Very thin black bear(index:25)' in room with player
 Print message 'Bear won't let me'
 Print message 'Maybe if I threw something?...'
 ```
----Action 95 - Input: ATT DRA
+###Action 95 - Input: ATT DRA
 *Conditions*
 ```
 item 'Large sleeping dragon(index:27)' in room with player
@@ -1059,7 +1059,7 @@ item 'Large sleeping dragon(index:27)' in room with player
 Print message 'It doesn't seem to bother him at all!'
 Print message 'Maybe if I threw something?...'
 ```
----Action 96 - Input: DRI WAT
+###Action 96 - Input: DRI WAT
 *Conditions*
 ```
 item 'Water in bottle(index:12)' carried
@@ -1070,7 +1070,7 @@ Print message 'BOY that really hit the spot!'
 Item 'Water in bottle(index:12' is removed from the game (put in room 0)
 get item 'Empty bottle(index:13', check if can carry
 ```
----Action 97 - Input: DRI WAT
+###Action 97 - Input: DRI WAT
 *Conditions*
 ```
 item 'Water(index:6)' in room with player
@@ -1079,7 +1079,7 @@ item 'Water(index:6)' in room with player
 ```
 Print message 'BOY that really hit the spot!'
 ```
----Action 98 - Input: DRI HON
+###Action 98 - Input: DRI HON
 *Conditions*
 ```
 item '\*ROYAL HONEY\*(index:23)' carried or in room with player
@@ -1089,7 +1089,7 @@ item '\*ROYAL HONEY\*(index:23)' carried or in room with player
 Print message 'BOY that really hit the spot!'
 Item '*ROYAL HONEY*(index:23' is removed from the game (put in room 0)
 ```
----Action 99 - Input: AT DOO
+###Action 99 - Input: AT DOO
 *Conditions*
 ```
 item 'Locked door(index:16)' in room with player
@@ -1102,7 +1102,7 @@ drops item 'Open door with a hallway beyond(index:17' into current room
 Print message 'Lock shatters'
 set 3 flag
 ```
----Action 100 - Input: SWI ANY
+###Action 100 - Input: SWI ANY
 *Conditions*
 ```
 player in room 26
@@ -1112,7 +1112,7 @@ something carried
 ```
 Print message 'Somethings too heavy. I fall.'
 ```
----Action 101 - Input: SWI ANY
+###Action 101 - Input: SWI ANY
 *Conditions*
 ```
 player in room 26
@@ -1124,7 +1124,7 @@ move room 10
 clear screen
 look
 ```
----Action 102 - Input: CHO ANY
+###Action 102 - Input: CHO ANY
 *Conditions*
 ```
 item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' not carried
@@ -1133,7 +1133,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' not carried
 ```
 Print message 'I'm not carrying ax, take inventory!'
 ```
----Action 103 - Input: SAY BUN
+###Action 103 - Input: SAY BUN
 *Conditions*
 ```
 item '\*Small statue of a BLUE OX\*(index:47)' carried or in room with player
@@ -1146,7 +1146,7 @@ Print message 'Something I'm holding vibrates and...'
 item 'Rusty axe (Magic word `BUNYON` on it)(index:11)' is moved to room 25
 set 7 flag
 ```
----Action 104 - Input: SAY BUN
+###Action 104 - Input: SAY BUN
 *Conditions*
 ```
 item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' carried
@@ -1159,7 +1159,7 @@ Print message 'Something I'm holding vibrates and...'
 item 'Rusty axe (Magic word `BUNYON` on it)(index:11)' is moved to room 25
 output inventory
 ```
----Action 105 - Input: RUB LAM
+###Action 105 - Input: RUB LAM
 *Conditions*
 ```
 item 'Lit brass lamp(index:9)' carried or in room with player
@@ -1168,7 +1168,7 @@ item 'Lit brass lamp(index:9)' carried or in room with player
 ```
 Print message 'No, its too hot.'
 ```
----Action 106 - Input: GET MUD
+###Action 106 - Input: GET MUD
 *Conditions*
 ```
 item 'Evil smelling mud(index:7)' in room with player
@@ -1178,7 +1178,7 @@ item 'Evil smelling mud(index:7)' in room with player
 get item 'Evil smelling mud(index:7', check if can carry
 Print message 'OK'
 ```
----Action 107 - Input: RUB LAM
+###Action 107 - Input: RUB LAM
 *Conditions*
 ```
 item 'Old fashioned brass lamp(index:10)' carried or in room with player
@@ -1190,7 +1190,7 @@ Print message 'A glowing Genie appears, drops somehting, then vanishes.'
 drops item '*DIAMOND RING*(index:48' into current room
 set 8 flag
 ```
----Action 108 - Input: RUB LAM
+###Action 108 - Input: RUB LAM
 *Conditions*
 ```
 item 'Old fashioned brass lamp(index:10)' carried or in room with player
@@ -1200,7 +1200,7 @@ bitflag 11 is set
 ```
 Print message 'Nothing happens'
 ```
----Action 109 - Input: RUB LAM
+###Action 109 - Input: RUB LAM
 *Conditions*
 ```
 item 'Old fashioned brass lamp(index:10)' carried or in room with player
@@ -1214,7 +1214,7 @@ set 11 flag
 Death, clear dark flag, move to last room
 Item '*DIAMOND RING*(index:48' is removed from the game (put in room 0)
 ```
----Action 110 - Input: RUB LAM
+###Action 110 - Input: RUB LAM
 *Conditions*
 ```
 item 'Old fashioned brass lamp(index:10)' carried or in room with player
@@ -1228,7 +1228,7 @@ set 10 flag
 Death, clear dark flag, move to last room
 Item '*DIAMOND BRACELET*(index:49' is removed from the game (put in room 0)
 ```
----Action 111 - Input: RUB LAM
+###Action 111 - Input: RUB LAM
 *Conditions*
 ```
 item 'Old fashioned brass lamp(index:10)' carried or in room with player
@@ -1240,7 +1240,7 @@ Print message 'A glowing Genie appears, drops somehting, then vanishes.'
 drops item '*DIAMOND BRACELET*(index:49' into current room
 set 9 flag
 ```
----Action 112 - Input: SCR ANY
+###Action 112 - Input: SCR ANY
 *Conditions*
 ```
 item 'Chigger bites(index:20)' carried
@@ -1253,7 +1253,7 @@ My chigger bites are now INFECTED!
 '
 swap item locations 'Chigger bites(index:20)' and 'Infected chigger bites(index:21)'
 ```
----Action 113 - Input: SCR ANY
+###Action 113 - Input: SCR ANY
 *Conditions*
 ```
 item 'Infected chigger bites(index:21)' carried
@@ -1264,7 +1264,7 @@ Print message 'BOY that really hit the spot!'
 Print message 'My bites have rotted my whole body!'
 Death, clear dark flag, move to last room
 ```
----Action 114 - Input: SWI ANY
+###Action 114 - Input: SWI ANY
 *Conditions*
 ```
 player not in room 26
@@ -1273,12 +1273,12 @@ player not in room 26
 ```
 Print message 'Not here.'
 ```
----Action 115 - Input: WAV ANY
+###Action 115 - Input: WAV ANY
 *Actions*
 ```
 Print message 'Nothing happens'
 ```
----Action 116 - Input: SAY BUN
+###Action 116 - Input: SAY BUN
 *Conditions*
 ```
 item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' in room with player
@@ -1289,7 +1289,7 @@ Print message 'OK'
 echo noun
 Print message 'The ax vibrated!'
 ```
----Action 117 - Input: LIG LAM
+###Action 117 - Input: LIG LAM
 *Conditions*
 ```
 item 'Lit brass lamp(index:9)' carried or in room with player
@@ -1298,12 +1298,12 @@ item 'Lit brass lamp(index:9)' carried or in room with player
 ```
 Print message 'Lamp burns with a cold flameless blue glow.'
 ```
----Action 118 - Input: FIN TRE
+###Action 118 - Input: FIN TRE
 *Actions*
 ```
 Print message 'Try the swamp'
 ```
----Action 119 - Input: DRO BEE
+###Action 119 - Input: DRO BEE
 *Conditions*
 ```
 item 'Bees in a bottle(index:26)' carried
@@ -1314,17 +1314,17 @@ drops item 'Large african bees(index:24' into current room
 swap item locations 'Bees in a bottle(index:26)' and 'Empty bottle(index:13)'
 Print message 'OK'
 ```
----Action 120 - Input: FIN KEY
+###Action 120 - Input: FIN KEY
 *Actions*
 ```
 Print message 'Try the swamp'
 ```
----Action 121 - Input: FIN MUD
+###Action 121 - Input: FIN MUD
 *Actions*
 ```
 Print message 'Try the swamp'
 ```
----Action 122 - Input: AT SHO
+###Action 122 - Input: AT SHO
 *Conditions*
 ```
 bitflag 3 is set
@@ -1336,7 +1336,7 @@ set 3 flag
 item 'Rusty axe (Magic word `BUNYON` on it)(index:11)' is moved to room 10
 Print message 'OK'
 ```
----Action 123 - Input: GO TRE
+###Action 123 - Input: GO TRE
 *Conditions*
 ```
 player in room 11
@@ -1347,7 +1347,7 @@ move room 28
 clear screen
 look
 ```
----Action 124 - Input: HEL ANY
+###Action 124 - Input: HEL ANY
 *Conditions*
 ```
 player in room 26
@@ -1359,7 +1359,7 @@ Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
 and any other verbs you can think of...'
 Print message 'You may need to say magic words here'
 ```
----Action 125 - Input: HEL ANY
+###Action 125 - Input: HEL ANY
 *Conditions*
 ```
 player in room 11
@@ -1370,7 +1370,7 @@ Print message 'A voice BOOOOMS out:'
 Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
 and any other verbs you can think of...'
 ```
----Action 126 - Input: HEL ANY
+###Action 126 - Input: HEL ANY
 *Conditions*
 ```
 player in room 19
@@ -1381,7 +1381,7 @@ Print message 'A voice BOOOOMS out:'
 Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
 and any other verbs you can think of...'
 ```
----Action 127 - Input: HEL ANY
+###Action 127 - Input: HEL ANY
 *Conditions*
 ```
 player in room 23
@@ -1391,7 +1391,7 @@ player in room 23
 Print message 'A voice BOOOOMS out:'
 Print message 'There are only 3 ways to wake the Dragon!'
 ```
----Action 128 - Input: HEL ANY
+###Action 128 - Input: HEL ANY
 *Conditions*
 ```
 player in room 13
@@ -1401,7 +1401,7 @@ player in room 13
 Print message 'A voice BOOOOMS out:'
 Print message 'You may need to say magic words here'
 ```
----Action 129 - Input: HEL ANY
+###Action 129 - Input: HEL ANY
 *Conditions*
 ```
 player in room 17
@@ -1411,7 +1411,7 @@ player in room 17
 Print message 'A voice BOOOOMS out:'
 Print message 'You may need to say magic words here'
 ```
----Action 130 - Input: HEL ANY
+###Action 130 - Input: HEL ANY
 *Conditions*
 ```
 player in room 15
@@ -1421,7 +1421,7 @@ player in room 15
 Print message 'A voice BOOOOMS out:'
 Print message 'You may need to say magic words here'
 ```
----Action 131 - Input: HEL ANY
+###Action 131 - Input: HEL ANY
 *Conditions*
 ```
 player in room 21
@@ -1432,7 +1432,7 @@ Print message 'A voice BOOOOMS out:'
 Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
 and any other verbs you can think of...'
 ```
----Action 132 - Input: HEL ANY
+###Action 132 - Input: HEL ANY
 *Conditions*
 ```
 player in room 8
@@ -1442,7 +1442,7 @@ player in room 8
 Print message 'A voice BOOOOMS out:'
 Print message 'Read the sign in the meadow!'
 ```
----Action 133 - Input: UNL DOO
+###Action 133 - Input: UNL DOO
 *Conditions*
 ```
 item 'Ring of skeleton keys(index:14)' carried
@@ -1453,7 +1453,7 @@ item 'Locked door(index:16)' in room with player
 drops item 'Open door with a hallway beyond(index:17' into current room
 Item 'Locked door(index:16' is removed from the game (put in room 0)
 ```
----Action 134 - Input: GO HAL
+###Action 134 - Input: GO HAL
 *Conditions*
 ```
 item 'Open door with a hallway beyond(index:17)' in room with player
@@ -1465,7 +1465,7 @@ set darkness flag
 clear screen
 look
 ```
----Action 135 - Input: LIG LAM
+###Action 135 - Input: LIG LAM
 *Conditions*
 ```
 item 'Old fashioned brass lamp(index:10)' carried or in room with player
@@ -1476,7 +1476,7 @@ swap item locations 'Old fashioned brass lamp(index:10)' and 'Lit brass lamp(ind
 Print message 'Lamp burns with a cold flameless blue glow.'
 look
 ```
----Action 136 - Input: UNL LAM
+###Action 136 - Input: UNL LAM
 *Conditions*
 ```
 item 'Lit brass lamp(index:9)' carried or in room with player
@@ -1488,7 +1488,7 @@ Print message 'OK'
 Print message 'Lamp is off'
 look
 ```
----Action 137 - Input: GET WEB
+###Action 137 - Input: GET WEB
 *Conditions*
 ```
 item 'Spider web with writing on it(index:3)' in room with player
@@ -1498,7 +1498,7 @@ item 'Spider web with writing on it(index:3)' in room with player
 Print message 'I'm bit by a spider'
 Death, clear dark flag, move to last room
 ```
----Action 138 - Input: GO HOL
+###Action 138 - Input: GO HOL
 *Conditions*
 ```
 item 'Smoking hole\. pieces of dragon and gore\.(index:52)' in room with player
@@ -1509,13 +1509,13 @@ move room 24
 clear screen
 look
 ```
----Action 139 - Input: GET SIG
+###Action 139 - Input: GET SIG
 *Actions*
 ```
 Print message 'A voice BOOOOMS out:'
 Print message 'please leave it alone'
 ```
----Action 140 - Input: LIG ANY
+###Action 140 - Input: LIG ANY
 *Conditions*
 ```
 item 'Flint & steel(index:28)' carried
@@ -1525,12 +1525,12 @@ item 'Swamp gas(index:18)' not in room with player
 ```
 Print message 'That won't ignite'
 ```
----Action 141 - Input: SCR ANY
+###Action 141 - Input: SCR ANY
 *Actions*
 ```
 Print message 'Nothing happens'
 ```
----Action 142 - Input: SAY AWA
+###Action 142 - Input: SAY AWA
 *Conditions*
 ```
 item '\*Thick PERSIAN RUG\*(index:29)' carried
@@ -1545,7 +1545,7 @@ Print message 'Something I'm holding vibrates and...'
 set darkness flag
 look
 ```
----Action 143 - Input: HEL ANY
+###Action 143 - Input: HEL ANY
 *Conditions*
 ```
 player in room 1
@@ -1556,7 +1556,7 @@ Print message 'A voice BOOOOMS out:'
 Print message 'Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
 and any other verbs you can think of...'
 ```
----Action 144 - Input: THR AXE
+###Action 144 - Input: THR AXE
 *Conditions*
 ```
 item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' not carried
@@ -1565,7 +1565,7 @@ item 'Rusty axe \(Magic word `BUNYON` on it\)(index:11)' not carried
 ```
 Print message 'I'm not carrying ax, take inventory!'
 ```
----Action 145 - Input: HEL ANY
+###Action 145 - Input: HEL ANY
 *Conditions*
 ```
 player in room 20
@@ -1576,14 +1576,14 @@ Print message 'A voice BOOOOMS out:'
 Print message 'Blow it up!'
 Print message 'Try the swamp'
 ```
----Action 146 - Input: SAY BUN
+###Action 146 - Input: SAY BUN
 *Actions*
 ```
 Print message 'OK'
 echo noun
 Print message 'Nothing happens'
 ```
----Action 147 - Input: GO HOL
+###Action 147 - Input: GO HOL
 *Conditions*
 ```
 player in room 4
@@ -1594,7 +1594,7 @@ move room 5
 clear screen
 look
 ```
----Action 148 - Input: GET HON
+###Action 148 - Input: GET HON
 *Conditions*
 ```
 item '\*ROYAL HONEY\*(index:23)' in room with player
@@ -1604,24 +1604,24 @@ item '\*ROYAL HONEY\*(index:23)' in room with player
 get item '*ROYAL HONEY*(index:23', check if can carry
 Print message 'OK'
 ```
----Action 149 - Input: HEL ANY
+###Action 149 - Input: HEL ANY
 *Actions*
 ```
 Print message 'Nothing happens'
 Print message 'You might try examining things...'
 ```
----Action 150 - Input: CHO ANY
+###Action 150 - Input: CHO ANY
 *Actions*
 ```
 Print message 'Nothing happens'
 Print message 'Maybe if I threw something?...'
 ```
----Action 151 - Input: THR ANY
+###Action 151 - Input: THR ANY
 *Actions*
 ```
 Print message 'Sorry, I can only throw the ax.'
 ```
----Action 152 - Input: AT ANY
+###Action 152 - Input: AT ANY
 *Conditions*
 ```
 bitflag 3 is set
@@ -1632,30 +1632,30 @@ set 3 flag
 Print message 'OK, I threw it.'
 Print message 'Nothing happens'
 ```
----Action 153 - Input: SAV GAM
+###Action 153 - Input: SAV GAM
 *Actions*
 ```
 Print message 'OK'
 save game
 ```
----Action 154 - Input: RUB ANY
+###Action 154 - Input: RUB ANY
 *Actions*
 ```
 Print message 'Nothing happens'
 ```
----Action 155 - Input: SAY ANY
+###Action 155 - Input: SAY ANY
 *Actions*
 ```
 Print message 'OK'
 echo noun
 Print message 'Nothing happens'
 ```
----Action 156 - Input: DRI ANY
+###Action 156 - Input: DRI ANY
 *Actions*
 ```
 Print message 'Huh? I don't think so!'
 ```
----Action 157 - Input: DRO WAT
+###Action 157 - Input: DRO WAT
 *Conditions*
 ```
 item 'Water in bottle(index:12)' carried
@@ -1667,7 +1667,7 @@ Print message 'Sizzle...'
 continue with next action
 swap item locations 'Water in bottle(index:12)' and 'Empty bottle(index:13)'
 ```
----Action 158 - Probability: 0
+###Action 158 - Probability: 0
 *Conditions*
 ```
 item 'Glowing \*FIRESTONE\*(index:0)' in room with player
@@ -1676,7 +1676,7 @@ item 'Glowing \*FIRESTONE\*(index:0)' in room with player
 ```
 swap item locations '*FIRESTONE* (cold now)(index:56)' and 'Glowing *FIRESTONE*(index:0)'
 ```
----Action 159 - Input: GET FIR
+###Action 159 - Input: GET FIR
 *Conditions*
 ```
 item 'Glowing \*FIRESTONE\*(index:0)' in room with player
@@ -1685,7 +1685,7 @@ item 'Glowing \*FIRESTONE\*(index:0)' in room with player
 ```
 Print message 'No, its too hot.'
 ```
----Action 160 - Input: GET FIR
+###Action 160 - Input: GET FIR
 *Conditions*
 ```
 item '\*FIRESTONE\* \(cold now\)(index:56)' in room with player
@@ -1695,12 +1695,12 @@ item '\*FIRESTONE\* \(cold now\)(index:56)' in room with player
 Print message 'OK'
 get item '*FIRESTONE* (cold now)(index:56', check if can carry
 ```
----Action 161 - Input: FIN ANY
+###Action 161 - Input: FIN ANY
 *Actions*
 ```
 Print message 'I don't know where it is'
 ```
----Action 162 - Input: REA ADV
+###Action 162 - Input: REA ADV
 *Conditions*
 ```
 item 'Large outdoor Advertisement(index:62)' carried or in room with player
@@ -1714,39 +1714,39 @@ program: PIRATE ADVENTURE. If they don't carry `ADVENTURE` have
 them call: 1-305-862-6917 today!
 '
 ```
----Action 163 - Input: LOO HOL
+###Action 163 - Input: LOO HOL
 *Actions*
 ```
 Print message 'There's something there all right! Maybe I should go there?'
 ```
----Action 164 - Input: JUM ANY
+###Action 164 - Input: JUM ANY
 *Actions*
 ```
 Print message 'Not here.'
 ```
----Action 165 - Input: ATT SPI
+###Action 165 - Input: ATT SPI
 *Actions*
 ```
 Print message 'I don't know where it is'
 ```
----Action 166 - Input: ATT ANY
+###Action 166 - Input: ATT ANY
 *Actions*
 ```
 Print message 'How?'
 ```
----Action 167 - Input: LOO ANY
+###Action 167 - Input: LOO ANY
 *Actions*
 ```
 Print message 'OK'
 Print message 'I see nothing special'
 look
 ```
----Action 168 - Input: AT ANY
+###Action 168 - Input: AT ANY
 *Actions*
 ```
 Print message 'What?'
 ```
----Action 169 - Input: GO HOL
+###Action 169 - Input: GO HOL
 *Conditions*
 ```
 player in room 29
@@ -1756,8 +1756,8 @@ player in room 29
 move room 30
 look
 ```
---Words
----Verbs
+##Words
+###Verbs
 | Word| Index| Aliases |
 | ----| -----| ------- |
 | AUT| 0|  |
@@ -1857,7 +1857,7 @@ look
 | CHA| 67|  |
 | LAK| 68|  |
 | YOH| 69|  |
---Rooms
+##Rooms
 | Index| Description| Exits (RoomIDs) |
 | -----| -----------| --------------- |
 | 0| I'm in a \
@@ -1965,7 +1965,7 @@ Obvious exits: NORTH, SOUTH, EAST, WEST, UP, DOWN| 32, 33, 32, 32, 32, 32 |
 unreadable letters over all the exits\.\
 \
 Obvious exits: NORTH, SOUTH, EAST, WEST, UP, DOWN| 32, 24, 11, 24, 28, 24 |
---Messages
+##Messages
 | Index| Text |
 | -----| ---- |
 | 0|  |
@@ -2059,7 +2059,7 @@ them call: 1\-305\-862\-6917 today\!\
  |
 | 74| The ax vibrated\! |
 | 75| I see nothing special |
---Items
+##Items
 | Index| Description| GetDrop| RoomID |
 | -----| -----------| -------| ------ |
 | 0| Glowing \*FIRESTONE\*| | 0 |
