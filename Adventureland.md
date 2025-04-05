@@ -1860,204 +1860,127 @@ look
 ## Rooms
 | Index| Description| Exits (RoomIDs) |
 | -----| -----------| --------------- |
-| 0| I'm in a \
-\
-Obvious exits: SOUTH, EAST, WEST, DOWN| 7, 10, 1, 24 |
-| 0| I'm in a dismal swamp\
-\
-Obvious exits: NORTH, EAST, WEST| 23, 29, 25 |
-| 0| I'm in a top of a tall cypress tree\
-\
-Obvious exits: DOWN| 1 |
-| 0| I'm in a damp hollow stump in the swamp\
-\
-Obvious exits: UP, DOWN| 1, 4 |
-| 0| I'm in a root chamber under the stump\
-\
-Obvious exits: UP| 3 |
-| 0| I'm in a semi\-dark hole by the root chamber\
-\
-Obvious exits: UP| 4 |
-| 0| I'm in a long down sloping hall\
-\
-Obvious exits: UP, DOWN| 5, 7 |
-| 0| I'm in a large cavern\
-\
-Obvious exits: NORTH, SOUTH, WEST, UP, DOWN| 31, 9, 27, 6, 12 |
-| 0| I'm in a large 8 sided room\
-\
-Obvious exits: SOUTH| 31 |
-| 0| I'm in a royal anteroom\
-\
-Obvious exits: NORTH, UP| 7, 20 |
-| 0| I'm on the shore of a lake\
-\
-Obvious exits: NORTH, SOUTH, WEST| 26, 29, 23 |
-| 0| I'm in a forest\
-\
-Obvious exits: NORTH, SOUTH, EAST, WEST| 11, 11, 23, 11 |
-| 0| I'm in a maze of pits\
-\
-Obvious exits: NORTH, SOUTH, EAST, DOWN| 13, 15, 15, 13 |
-| 0| I'm in a maze of pits\
-\
-Obvious exits: WEST, UP| 14, 12 |
-| 0| I'm in a maze of pits\
-\
-Obvious exits: NORTH, SOUTH, EAST, WEST, UP, DOWN| 17, 12, 13, 16, 16, 17 |
-| 0| I'm in a maze of pits\
-\
-Obvious exits: NORTH, EAST, WEST, UP| 12, 13, 12, 13 |
-| 0| I'm in a maze of pits\
-\
-Obvious exits: SOUTH, UP, DOWN| 17, 14, 17 |
-| 0| I'm in a maze of pits\
-\
-Obvious exits: NORTH, SOUTH, EAST, WEST, UP, DOWN| 17, 12, 12, 15, 14, 18 |
-| 0| I'm at the bottom of a very deep chasm\. High above me is\
-a pair of ledges\. One has a bricked up window across its face\
-the other faces a Throne\-room\
-\
-Obvious exits: UP| 17 |
-| 0| I'm on a narrow ledge by a chasm\. Across the chasm is\
-the Throne\-room\
-\
-Obvious exits: WEST| 20 |
-| 0| I'm in a royal chamber\
-\
-Obvious exits: DOWN| 9 |
-| 0| I'm on a narrow ledge by a Throne\-room\
+| 0| | 7, 10, 1, 24 |
+| 0| dismal swamp| 23, 29, 25 |
+| 0| top of a tall cypress tree| 1 |
+| 0| damp hollow stump in the swamp| 1, 4 |
+| 0| root chamber under the stump| 3 |
+| 0| semi\-dark hole by the root chamber| 4 |
+| 0| long down sloping hall| 5, 7 |
+| 0| large cavern| 31, 9, 27, 6, 12 |
+| 0| large 8 sided room| 31 |
+| 0| royal anteroom| 7, 20 |
+| 0| \*I'm on the shore of a lake| 26, 29, 23 |
+| 0| forest| 11, 11, 23, 11 |
+| 0| maze of pits| 13, 15, 15, 13 |
+| 0| maze of pits| 14, 12 |
+| 0| maze of pits| 17, 12, 13, 16, 16, 17 |
+| 0| maze of pits| 12, 13, 12, 13 |
+| 0| maze of pits| 17, 14, 17 |
+| 0| maze of pits| 17, 12, 12, 15, 14, 18 |
+| 0| \*I'm at the bottom of a very deep chasm\. High above me is
+a pair of ledges\. One has a bricked up window across its face
+the other faces a Throne\-room| 17 |
+| 0| \*I'm on a narrow ledge by a chasm\. Across the chasm is
+the Throne\-room| 20 |
+| 0| royal chamber| 9 |
+| 0| \*I'm on a narrow ledge by a Throne\-room
 Across the chasm is another ledge|  |
-| 0| I'm in a throne room\
-\
-Obvious exits: WEST| 21 |
-| 0| I'm in a sunny meadow\
-\
-Obvious exits: SOUTH, EAST, WEST| 1, 10, 11 |
-| 0| I think I'm in real trouble now\. There's a fellow here with\
+| 0| throne room| 21 |
+| 0| sunny meadow| 1, 10, 11 |
+| 0| \*I think I'm in real trouble now\. There's a fellow here with
 a pitchfork and pointed tail\. \.\.\.Oh Hell\!|  |
-| 0| I'm in a hidden grove\
-\
-Obvious exits: NORTH, EAST| 11, 1 |
-| 0| I'm in a quick\-sand bog|  |
-| 0| I'm in a Memory chip of a COMPUTER\!\
-I took a wrong turn\!\
-\
-Obvious exits: EAST| 7 |
-| 0| I'm in a top of an oak\.\
-To the East I see a meadow, beyond that a lake\.\
-\
-Obvious exits: DOWN| 11 |
-| 0| I'm at the edge of a BOTTOMLESS hole\
-\
-Obvious exits: NORTH, WEST| 10, 1 |
-| 0| I'm on a ledge just below the rim of the BOTTOMLESS hole\. I\
-don't think I want to go down\
-\
-Obvious exits: UP, DOWN| 29, 24 |
-| 0| I'm in a long tunnel\. I hear buzzing ahead\
-\
-Obvious exits: NORTH, SOUTH| 8, 7 |
-| 0| I'm in an endless corridor\
-\
-Obvious exits: NORTH, SOUTH, EAST, WEST, UP, DOWN| 32, 33, 32, 32, 32, 32 |
-| 0| I'm in a large misty room with strange\
-unreadable letters over all the exits\.\
-\
-Obvious exits: NORTH, SOUTH, EAST, WEST, UP, DOWN| 32, 24, 11, 24, 28, 24 |
+| 0| hidden grove| 11, 1 |
+| 0| quick\-sand bog|  |
+| 0| Memory chip of a COMPUTER\!
+I took a wrong turn\!| 7 |
+| 0| top of an oak\.
+To the East I see a meadow, beyond that a lake\.| 11 |
+| 0| \*I'm at the edge of a BOTTOMLESS hole| 10, 1 |
+| 0| \*I'm on a ledge just below the rim of the BOTTOMLESS hole\. I
+don't think I want to go down| 29, 24 |
+| 0| long tunnel\. I hear buzzing ahead| 8, 7 |
+| 0| \*I'm in an endless corridor| 32, 33, 32, 32, 32, 32 |
+| 0| large misty room with strange
+unreadable letters over all the exits\.| 32, 24, 11, 24, 28, 24 |
 ## Messages
 | Index| Text |
 | -----| ---- |
 | 0|  |
 | 1| Nothing happens |
-| 2| Chop 'er down\! |
-| 3| BOY that really hit the spot\! |
-| 4| Dragon smells something\. Awakens & attacks me\! |
+| 2| Chop 'er down! |
+| 3| BOY that really hit the spot! |
+| 4| Dragon smells something. Awakens & attacks me! |
 | 5| Lock shatters |
 | 6| I can't its locked |
-| 7| TIMBER\. Something fell from the tree top & vanished in the swamp |
-| 8| TIMBER\! |
+| 7| TIMBER. Something fell from the tree top & vanished in the swamp |
+| 8| TIMBER! |
 | 9| Lamp is off |
-| 10| Lamp burns with a cold flameless blue glow\. |
+| 10| Lamp burns with a cold flameless blue glow. |
 | 11| I'm bit by a spider |
-| 12| \
-My chigger bites are now INFECTED\!\
- |
-| 13| My bites have rotted my whole body\! |
-| 14| Bear eats the honey and falls asleep\. |
+| 12|  My chigger bites are now INFECTED!  |
+| 13| My bites have rotted my whole body! |
+| 14| Bear eats the honey and falls asleep. |
 | 15| Bees sting me |
-| 16| First I need an empty container\. |
+| 16| First I need an empty container. |
 | 17| The bees all suffocated and disappeared |
-| 18| Something I'm holding vibrates and\.\.\. |
+| 18| Something I'm holding vibrates and... |
 | 19| nothing to light it with |
 | 20| Gas bladder blew up |
-| 21| in my hands\! |
+| 21| in my hands! |
 | 22| gas needs to be contained before it will burn |
-| 23| Gas dissipates\. \(I think you blew it\) |
+| 23| Gas dissipates. (I think you blew it) |
 | 24| That won't ignite |
 | 25| How? |
 | 26| Bear won't let me |
-| 27| `Don't waste honey, get mad instead\! Dam lava\!?` |
-| 28| Bees madden bear, bear then attacks me\! |
+| 27| `Don't waste honey, get mad instead! Dam lava!?` |
+| 28| Bees madden bear, bear then attacks me! |
 | 29| It soaks into the ground |
-| 30| In 2 words tell me at what\.\.\.like: AT TREE |
-| 31| OH NO\.\.\. Bear dodges\.\.\. CRASH\! |
-| 32| Its heavy\! |
-| 33| Somethings too heavy\. I fall\. |
+| 30| In 2 words tell me at what...like: AT TREE |
+| 31| OH NO... Bear dodges... CRASH! |
+| 32| Its heavy! |
+| 33| Somethings too heavy. I fall. |
 | 34| To stop game say QUIT |
 | 35| Mirror hits floor and shatters into a MILLION pieces |
 | 36| Mirror lands softly on rug, lights up and says: |
-| 37| You lost \*ALL\* treasures\. |
-| 38| I'm not carrying ax, take inventory\! |
-| 39| It doesn't seem to bother him at all\! |
-| 40| The mud dried up and fell off\. |
-| 41| Bear is so startled that he FELL off the ledge\! |
-| 42| ` DRAGON STING ` and fades\. I don't get it, I hope you do\. |
-| 43| The bees attack the dragon which gets so annoyed it gets up\
-and flys away\.\.\. |
+| 37| You lost *ALL* treasures. |
+| 38| I'm not carrying ax, take inventory! |
+| 39| It doesn't seem to bother him at all! |
+| 40| The mud dried up and fell off. |
+| 41| Bear is so startled that he FELL off the ledge! |
+| 42| ` DRAGON STING ` and fades. I don't get it, I hope you do. |
+| 43| The bees attack the dragon which gets so annoyed it gets up and flys away... |
 | 44| Lamp is now full & lit |
-| 45| \
-I'm bitten by chiggers\.\
- |
-| 46| There's something there all right\! Maybe I should go there? |
-| 47| Maybe if I threw something?\.\.\. |
-| 48| Too dry, the fish died\. |
-| 49| A glowing Genie appears, drops somehting, then vanishes\. |
-| 50| A glowing Genie appears, says `Boy you're selfish`, takes\
-something and then makes `ME` vanish\! |
-| 51| No, its too hot\. |
-| 52| Not here\. |
+| 45|  I'm bitten by chiggers.  |
+| 46| There's something there all right! Maybe I should go there? |
+| 47| Maybe if I threw something?... |
+| 48| Too dry, the fish died. |
+| 49| A glowing Genie appears, drops somehting, then vanishes. |
+| 50| A glowing Genie appears, says `Boy you're selfish`, takes something and then makes `ME` vanish! |
+| 51| No, its too hot. |
+| 52| Not here. |
 | 53| Try the swamp |
-| 54| Sizzle\.\.\. |
-| 55| Try \-\-\> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`\
-and any other verbs you can think of\.\.\. |
-| 56| There are only 3 ways to wake the Dragon\! |
+| 54| Sizzle... |
+| 55| Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP` and any other verbs you can think of... |
+| 56| There are only 3 ways to wake the Dragon! |
 | 57| Remember you can always say `HELP` |
-| 58| Read the sign in the meadow\! |
+| 58| Read the sign in the meadow! |
 | 59| You may need to say magic words here |
 | 60| A voice BOOOOMS out: |
 | 61| please leave it alone |
-| 62| Sorry, I can only throw the ax\. |
-| 63| Medicine is good for bites\. |
+| 62| Sorry, I can only throw the ax. |
+| 63| Medicine is good for bites. |
 | 64| I don't know where it is |
-| 65| \
-Welcome to Adventure number: 1 `ADVENTURELAND`\.\
-In this Adventure you're to find \*TREASURES\* & store them away\.\
-\
-To see how well you're doing say: `SCORE` |
-| 66| Blow it up\! |
-| 67| Fish have escaped back to the lake\. |
+| 65|  Welcome to Adventure number: 1 `ADVENTURELAND`. In this Adventure you're to find *TREASURES* & store them away.  To see how well you're doing say: `SCORE` |
+| 66| Blow it up! |
+| 67| Fish have escaped back to the lake. |
 | 68| OK |
-| 69| Huh? I don't think so\! |
-| 70| You might try examining things\.\.\. |
+| 69| Huh? I don't think so! |
+| 70| You might try examining things... |
 | 71| What? |
-| 72| OK, I threw it\. |
-| 73| \
-Check with your favorite computer dealer for the next Adventure\
-program: PIRATE ADVENTURE\. If they don't carry `ADVENTURE` have\
-them call: 1\-305\-862\-6917 today\!\
- |
-| 74| The ax vibrated\! |
+| 72| OK, I threw it. |
+| 73|  Check with your favorite computer dealer for the next Adventure program: PIRATE ADVENTURE. If they don't carry `ADVENTURE` have them call: 1-305-862-6917 today!  |
+| 74| The ax vibrated! |
 | 75| I see nothing special |
 ## Items
 | Index| Description| GetDrop| RoomID |
@@ -2092,7 +2015,7 @@ them call: 1\-305\-862\-6917 today\!\
 | 27| Large sleeping dragon| | 23 |
 | 28| Flint & steel| FLI| 30 |
 | 29| \*Thick PERSIAN RUG\*| RUG| 17 |
-| 30| Sign: `magic word's AWAY\! Look la\.\.\.`\
+| 30| Sign: `magic word's AWAY\! Look la\.\.\.`
 \(Rest of sign is missing\!\)| | 18 |
 | 31| Distended gas bladder| BLA| 0 |
 | 32| Bricked up window| | 20 |
