@@ -1,0 +1,2827 @@
+# 4. Voodoo Castle
+*Table of Contents*
+-[Header](#Header)
+-[Actions](#Actions)
+-[Verbs](#Verbs)
+-[Nouns](#Nouns)
+-[Rooms](#Rooms)
+-[Messages](#Messages)
+-[Items](#Items)
+## Header
+| Property| Value |
+| --------| ----- |
+| adventureNumber| 4 |
+| Unknown| 0 |
+| numItems| 66 |
+| numActions| 190 |
+| numNounVerbs| 90 |
+| numRooms| 26 |
+| maxCarry| 9 |
+| startRoom| 1 |
+| totalTreasures| 0 |
+| wordLength| 3 |
+| lightDuration| 15000 |
+| numMessages| 100 |
+| treasureRoom| 0 |
+## Actions
+### Action 0 - Probability: 25
+*Conditions*
+```
+item 'Open Window(index:10)' in room with player
+```
+*Actions*
+```
+Print message 'Raven crys something outside'
+```
+### Action 1 - Probability: 100
+*Conditions*
+```
+player in room 9
+item 'Open Window(index:10)' in room with player
+item 'Four leaf clover(index:14)' not carried or in room with player
+```
+*Actions*
+```
+Print message 'Window just slAmmed shut'
+swap item locations 'Open Window(index:10)' and 'Closed Window(index:19)'
+```
+### Action 2 - Probability: 100
+*Conditions*
+```
+player not in room 9
+item 'Closed Window(index:19)' in game
+```
+*Actions*
+```
+swap item locations 'Open Window(index:10)' and 'Closed Window(index:19)'
+```
+### Action 3 - Probability: 0
+### Action 4 - Probability: 0
+### Action 5 - Probability: 45
+*Conditions*
+```
+player in room 19
+item 'Four leaf clover(index:14)' not in game
+```
+*Actions*
+```
+Print message 'A beam of light shines on grave'
+```
+### Action 6 - Probability: 30
+*Conditions*
+```
+item 'Chem tubes(index:36)' carried or in room with player
+item 'Shield(index:7)' not carried
+```
+*Actions*
+```
+move room 25
+look
+Print message 'One of the test tubes EXPLODED\!'
+continue with next action
+```
+### Action 7 - Probability: 0
+*Actions*
+```
+Print message 'A sign here says:'
+Print message 'This grAve reserved for you\!'
+```
+### Action 8 - Probability: 30
+*Conditions*
+```
+item 'Chem tubes(index:36)' carried or in room with player
+item 'Shield(index:7)' carried
+```
+*Actions*
+```
+Print message 'One of the test tubes EXPLODED\!'
+```
+### Action 9 - Probability: 0
+### Action 10 - Probability: 100
+*Conditions*
+```
+player in room 15
+bitflag 15 is set
+```
+*Actions*
+```
+clear darkness flag
+look
+```
+### Action 11 - Probability: 50
+*Conditions*
+```
+item 'Soot(index:21)' carried
+player in room 10
+```
+*Actions*
+```
+Print message 'Maid chased me with broom for tracking soot through the Ball\- room\. I wonder where I am?'
+move room 11
+```
+### Action 12 - Probability: 100
+*Conditions*
+```
+player in room 3
+bitflag 15 is set
+```
+*Actions*
+```
+clear darkness flag
+look
+```
+### Action 13 - Probability: 0
+### Action 14 - Probability: 100
+*Conditions*
+```
+player in room 18
+item 'Stuck Chimney Sweep(index:35)' in game
+```
+*Actions*
+```
+Print message 'I hear strange sounds, as if someone were moaning\.'
+```
+### Action 15 - Probability: 35
+*Conditions*
+```
+player in room 14
+item 'Stuck Chimney Sweep(index:35)' in game
+```
+*Actions*
+```
+Print message 'I hear strange sounds, as if someone were moaning\.'
+```
+### Action 16 - Probability: 35
+*Conditions*
+```
+player in room 15
+item 'Stuck Chimney Sweep(index:35)' in game
+```
+*Actions*
+```
+Print message 'I hear strange sounds, as if someone were moaning\.'
+```
+### Action 17 - Probability: 100
+*Conditions*
+```
+player in room 25
+```
+*Actions*
+```
+Print message 'Luck wasn't with me\!'
+game over
+```
+### Action 18 - Probability: 100
+*Conditions*
+```
+bitflag 7 is false
+```
+*Actions*
+```
+Print message 'Welcome to ADVENTURE:4, `VOODOO CASTLE` by Alexis ADAMS\. Dedicated to all MOMS\!'
+set 7 flag
+```
+### Action 19 - Probability: 7
+*Conditions*
+```
+item 'Dusty Idol(index:43)' carried
+```
+*Actions*
+```
+Print message 'My idol acted strange'
+Print message 'Some dust fell off it and it glowed briefly\.'
+```
+### Action 20 - Probability: 35
+*Conditions*
+```
+item 'Ju\-Ju man(index:29)' carried or in room with player
+```
+*Actions*
+```
+Print message 'I hear someone mumbling\.'
+```
+### Action 21 - Probability: 0
+### Action 22 - Probability: 0
+### Action 23 - Input: GET SWE
+*Conditions*
+```
+item 'Stuck Chimney Sweep(index:35)' in room with player
+```
+*Actions*
+```
+Print message 'won't budge\!'
+```
+### Action 24 - Input: GET GRA
+*Conditions*
+```
+item 'Broken grating(index:59)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+get item 'Broken grating(index:59)', check if can carry
+```
+### Action 25 - Input: WAV BAG
+*Conditions*
+```
+player in room 8
+item 'Wide crack in the wall(index:31)' not in game
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's a CLAP OF THUNDER\!'
+wait 2 seconds
+wait 2 seconds
+swap item locations 'Wide crack in the wall(index:31)' and 'Crack in the wall(index:61)'
+```
+### Action 26 - Input: OPE CEL
+*Conditions*
+```
+item 'Four leaf clover(index:14)' not carried
+```
+*Actions*
+```
+Print message 'I can't do that'
+```
+### Action 27 - Input: GO CEL
+*Conditions*
+```
+item 'Open jail cell(index:56)' in room with player
+item 'Four leaf clover(index:14)' not in room with player
+```
+*Actions*
+```
+clear screen
+Print message 'Cell door slams shut'
+move room 21
+look
+```
+### Action 28 - Input: LOO WRI
+*Conditions*
+```
+item 'Plaque(index:2)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's something written there'
+```
+### Action 29 - Input: GET INV
+*Actions*
+```
+output inventory
+```
+### Action 30 - Input: BRE WIN
+*Conditions*
+```
+item 'Closed Window(index:19)' in room with player
+```
+*Actions*
+```
+Print message 'This glass can't be broken'
+```
+### Action 31 - Input: MOV KET
+*Conditions*
+```
+item 'Big kettle(index:5)' in room with player
+item 'Dark hole(index:6)' not in room with player
+```
+*Actions*
+```
+drops item 'Dark hole(index:6)' into current room
+Print message 'OK'
+```
+### Action 32 - Input: GET BAL
+*Conditions*
+```
+item 'Crystal Ball(index:18)' in room with player
+```
+*Actions*
+```
+Print message 'A sepulchral voice says:'
+Print message 'It belongs to the medium'
+```
+### Action 33 - Input: GET CLO
+*Conditions*
+```
+item 'Four leaf clover(index:14)' in room with player
+```
+*Actions*
+```
+get item 'Four leaf clover(index:14)', check if can carry
+```
+### Action 34 - Input: LOO GRA
+*Conditions*
+```
+item 'GrAves(index:15)' in room with player
+item 'Four leaf clover(index:14)' not in game
+```
+*Actions*
+```
+Print message 'Amongst the GRAVES is a four leaf clover\.'
+Print message 'A sign here says:'
+Print message 'This grAve reserved for you\!'
+```
+### Action 35 - Input: GET CLO
+*Conditions*
+```
+item 'Four leaf clover(index:14)' not in game
+player in room 19
+```
+*Actions*
+```
+get item 'Four leaf clover(index:14)', check if can carry
+Print message 'OK'
+```
+### Action 36 - Input: LOO GRA
+*Conditions*
+```
+item 'GrAves(index:15)' in room with player
+item 'Four leaf clover(index:14)' in game
+```
+*Actions*
+```
+Print message 'A sign here says:'
+Print message 'This grAve reserved for you\!'
+```
+### Action 37 - Input: GO STA
+*Conditions*
+```
+item 'Stairs(index:8)' in room with player
+```
+*Actions*
+```
+clear screen
+move room 20
+look
+```
+### Action 38 - Input: LOO SAF
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+Print message 'Safe's combination lock is numbered from 33 to 38\.'
+```
+### Action 39 - Input: LOO SAF
+*Conditions*
+```
+item 'Open SAfe(index:34)' in room with player
+item 'Antique hammer(index:47)' not in game
+```
+*Actions*
+```
+drops item 'Antique hammer(index:47)' into current room
+Print message 'There's an antique hammer here'
+```
+### Action 40 - Input: OPE FLU
+*Conditions*
+```
+item 'Closed Flue(index:12)' in room with player
+```
+*Actions*
+```
+swap item locations 'Closed Flue(index:12)' and 'Open Flue(index:13)'
+Print message 'OK'
+drops item 'Dark Chimney(index:11)' into current room
+```
+### Action 41 - Input: CLO FLU
+*Conditions*
+```
+item 'Open Flue(index:13)' in room with player
+```
+*Actions*
+```
+swap item locations 'Closed Flue(index:12)' and 'Open Flue(index:13)'
+Print message 'OK'
+Item 'Dark Chimney(index:11)' is removed from the game (put in room 0)
+```
+### Action 42 - Input: GO HOL
+*Conditions*
+```
+item 'Dark hole(index:6)' in room with player
+```
+*Actions*
+```
+move room 16
+set darkness flag
+clear screen
+look
+```
+### Action 43 - Input: GO FLU
+*Conditions*
+```
+player in room 15
+item 'Open Flue(index:13)' in room with player
+```
+*Actions*
+```
+set darkness flag
+move room 14
+clear screen
+look
+```
+### Action 44 - Input: LOO LEA
+*Conditions*
+```
+item 'Advertising leaflet(index:60)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's something written there'
+```
+### Action 45 - Input: LOO BAL
+*Conditions*
+```
+player in room 6
+item 'Crystal Ball(index:18)' in room with player
+```
+*Actions*
+```
+Print message 'I see nothing very special\.'
+move room 4
+look
+Print message 'Spirit vibrations drive me from room\.'
+```
+### Action 46 - Probability: 0
+### Action 47 - Input: GO FIR
+*Conditions*
+```
+item 'Large fireplace(index:20)' in room with player
+```
+*Actions*
+```
+move room 15
+look
+```
+### Action 48 - Input: OPE DOO
+*Conditions*
+```
+player in room 13
+```
+*Actions*
+```
+Print message 'OK'
+```
+### Action 49 - Input: WAV RIN
+*Conditions*
+```
+item 'Massive stone door with a SAPPHIRE set into it(index:24)' in room with player
+item 'Sapphire ring(index:25)' carried
+```
+*Actions*
+```
+swap item locations 'Slick chute leading downward(index:28)' and 'Massive stone door with a SAPPHIRE set into it(index:24)'
+Print message 'Ring glows briefly & door vanishes'
+```
+### Action 50 - Input: GO CHU
+*Conditions*
+```
+item 'Slick chute leading downward(index:28)' in room with player
+```
+*Actions*
+```
+Print message 'OK'
+move room 8
+look
+```
+### Action 51 - Input: GET RIN
+*Conditions*
+```
+item 'Open Coffin(index:27)' in room with player
+item 'Sapphire ring(index:25)' not in game
+```
+*Actions*
+```
+get item 'Sapphire ring(index:25)', check if can carry
+Print message 'OK'
+```
+### Action 52 - Input: DRI BRE
+*Conditions*
+```
+item 'Cast iron pot(index:16)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's a CLAP OF THUNDER\!'
+wait 2 seconds
+Print message 'You've been turned into a broomstick & a witch rides off on you\!'
+game over
+```
+### Action 53 - Input: OPE COF
+*Conditions*
+```
+item 'Closed Coffin(index:17)' in room with player
+```
+*Actions*
+```
+swap item locations 'Closed Coffin(index:17)' and 'Open Coffin(index:27)'
+Print message 'OK'
+```
+### Action 54 - Input: CLO COF
+*Conditions*
+```
+item 'Open Coffin(index:27)' in room with player
+```
+*Actions*
+```
+swap item locations 'Closed Coffin(index:17)' and 'Open Coffin(index:27)'
+Print message 'OK'
+```
+### Action 55 - Input: GET ARM
+*Conditions*
+```
+item 'Knight's Suit of Armor(index:57)' in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'It's much to heavy to LIFT\!'
+```
+### Action 56 - Input: BRE BAL
+*Conditions*
+```
+player in room 6
+```
+*Actions*
+```
+Death, clear dark flag, move to last room
+Print message 'A beam of light shines on grave'
+Print message 'This grAve reserved for you\!'
+game over
+```
+### Action 57 - Input: OPE DOO
+*Conditions*
+```
+item 'Massive stone door with a SAPPHIRE set into it(index:24)' in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'won't budge\!'
+```
+### Action 58 - Input: GET BAG
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+item 'Ju\-Ju man(index:29)' in game
+```
+*Actions*
+```
+get item 'Ju-Ju bag(index:26)', check if can carry
+Print message 'OK'
+```
+### Action 59 - Input: REA WRI
+*Conditions*
+```
+item 'Plaque(index:2)' carried or in room with player
+item 'Broken glass(index:4)' carried or in room with player
+bitflag 15 is set
+```
+*Actions*
+```
+Print message 'Plaque says: `safe \-\-\> 38 33`'
+```
+### Action 60 - Input: GO CHU
+*Conditions*
+```
+item 'Slick chute leading downward(index:28)' in room with player
+```
+*Actions*
+```
+move room 8
+look
+```
+### Action 61 - Input: GO CHU
+*Conditions*
+```
+item 'Slippery chute leading up(index:30)' in room with player
+```
+*Actions*
+```
+Print message 'I slide back down'
+```
+### Action 62 - Input: LOO BAG
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+item 'Voodoo book(index:52)' not in game
+item 'Stick(index:54)' in game
+```
+*Actions*
+```
+Print message 'There's a book there\.'
+```
+### Action 63 - Input: CIR COF
+*Conditions*
+```
+player in room 1
+```
+*Actions*
+```
+continue with next action
+Print message 'OK'
+Print message 'Nothing happened'
+wait 2 seconds
+```
+### Action 64 - Probability: 0
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' not in game
+item 'Brightly glowing idol(index:9)' carried or in room with player
+item 'Bloody Knife(index:0)' carried
+```
+*Actions*
+```
+set 3 flag
+Print message 'There's a CLAP OF THUNDER\!'
+set darkness flag
+Print message 'Its very dark, the only light is from the idol\.'
+```
+### Action 65 - Input: LOO CHE
+*Conditions*
+```
+item 'Mixed Chemicals(index:40)' carried or in room with player
+```
+*Actions*
+```
+Print message 'Looks almost like lemonade\. Yummy\!'
+```
+### Action 66 - Input: GET HEA
+*Conditions*
+```
+bitflag 0 is false
+item 'Dull & broken sword(index:33)' carried or in room with player
+item 'Animal heads(index:3)' in room with player
+```
+*Actions*
+```
+get item 'Animal heads(index:3)', check if can carry
+drops item 'Closed SAfe(index:37)' into current room
+Print message 'OK'
+Set bit 0 true
+```
+### Action 67 - Input: OPE SAF
+*Conditions*
+```
+player in room 5
+item 'Open SAfe(index:34)' in room with player
+```
+*Actions*
+```
+Print message 'OK'
+```
+### Action 68 - Input: LOO SAF
+*Conditions*
+```
+player in room 5
+item 'Open SAfe(index:34)' in room with player
+item 'Antique hammer(index:47)' in game
+```
+*Actions*
+```
+Print message 'OK'
+Print message 'Its empty\.'
+```
+### Action 69 - Input: GET HEA
+*Conditions*
+```
+bitflag 0 is set
+item 'Animal heads(index:3)' carried or in room with player
+```
+*Actions*
+```
+get item 'Animal heads(index:3)', check if can carry
+Print message 'OK'
+```
+### Action 70 - Input: TUR 38
+*Conditions*
+```
+bitflag 1 is false
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+set 1 flag
+Print message 'OK'
+```
+### Action 71 - Input: TUR 33
+*Conditions*
+```
+bitflag 1 is set
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+swap item locations 'Open SAfe(index:34)' and 'Closed SAfe(index:37)'
+Print message 'OK'
+```
+### Action 72 - Input: LOO BAG
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+item 'Stick(index:54)' not in game
+item 'Voodoo book(index:52)' not in game
+item 'Ju\-Ju man(index:29)' in game
+```
+*Actions*
+```
+Print message 'There's a book there\.'
+Print message 'There's a stick there\.'
+```
+### Action 73 - Input: REA BOO
+*Conditions*
+```
+item 'Voodoo book(index:52)' carried or in room with player
+```
+*Actions*
+```
+Print message 'It's a book on removing curses\. Says: `With knife in hand you take a stand\. Circle coffin and\.\.\.` The rest of the page is missing\!\!\!'
+```
+### Action 74 - Input: YEL MED
+*Conditions*
+```
+item 'Spirit Medium(index:23)' not in game
+player in room 6
+```
+*Actions*
+```
+Print message 'OK'
+echo noun
+drops item 'Spirit Medium(index:23)' into current room
+Print message 'Medium appears, says: `Keep a good luck charm on you & your friend\. I also see a \-moving\- bag helping you through a tight squeeze\!`'
+```
+### Action 75 - Input: GO CHI
+*Conditions*
+```
+item 'Open Flue(index:13)' in room with player
+```
+*Actions*
+```
+move room 14
+set darkness flag
+look
+```
+### Action 76 - Input: REA LAB
+*Conditions*
+```
+item 'Labeled chemicals(index:38)' carried or in room with player
+```
+*Actions*
+```
+Print message 'They appear to be mixable\.'
+```
+### Action 77 - Input: DRI CHE
+*Conditions*
+```
+item 'Mixed Chemicals(index:40)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's a CLAP OF THUNDER\!'
+continue with next action
+swap item locations 'Wide open door(index:41)' and 'Tiny open door(index:22)'
+Item 'Labeled chemicals(index:38)' is removed from the game (put in room 0)
+```
+### Action 78 - Probability: 0
+*Actions*
+```
+Item 'Mixed Chemicals(index:40)' is removed from the game (put in room 0)
+wait 2 seconds
+wait 2 seconds
+Print message 'I'm now 4 feet tall\!'
+```
+### Action 79 - Input: YEL ZAP
+*Conditions*
+```
+item 'Ju\-Ju man statue(index:53)' carried or in room with player
+```
+*Actions*
+```
+Item 'Ju-Ju man statue(index:53)' is removed from the game (put in room 0)
+drops item 'Ju-Ju man(index:29)' into current room
+continue with next action
+echo noun
+```
+### Action 80 - Probability: 0
+*Actions*
+```
+Print message 'There's a Clap of Thunder & then suddenly the stone statue begins to crack\. I may be in trouble now, there's someone in the room with me\!'
+Print message 'I hear someone mumbling\.'
+```
+### Action 81 - Input: SAV GAM
+*Actions*
+```
+save game
+```
+### Action 82 - Input: GET KET
+*Conditions*
+```
+item 'Big kettle(index:5)' in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'It's much to heavy to LIFT\!'
+```
+### Action 83 - Input: GO DOO
+*Conditions*
+```
+item 'Tiny open door(index:22)' in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'I'm too big'
+Print message 'It will take some strong magic to get me through that\!'
+```
+### Action 84 - Input: INV ANY
+*Actions*
+```
+output inventory
+```
+### Action 85 - Input: GET HEA
+*Conditions*
+```
+bitflag 0 is false
+item 'Animal heads(index:3)' carried or in room with player
+```
+*Actions*
+```
+Print message 'won't budge\!'
+Print message 'I'll need something to pry it off the wall\!'
+```
+### Action 86 - Input: DRO FOO
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' carried
+```
+*Actions*
+```
+Print message 'On what?'
+```
+### Action 87 - Input: ON MAN
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' carried or in room with player
+item 'Open Coffin(index:27)' in room with player
+```
+*Actions*
+```
+Print message 'OK'
+Print message 'There's a CLAP OF THUNDER\!'
+Item 'Rabbit's foot(index:32)' is removed from the game (put in room 0)
+```
+### Action 88 - Input: GET PIN
+*Conditions*
+```
+item 'Doll(index:44)' in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'won't budge\!'
+```
+### Action 89 - Input: PRE SWE
+*Conditions*
+```
+player in room 18
+item 'Stuck Chimney Sweep(index:35)' in room with player
+```
+*Actions*
+```
+Print message 'Sweep pops out, thanks me, hands me a piece of paper then vanishes\!'
+Item 'Stuck Chimney Sweep(index:35)' is removed from the game (put in room 0)
+take item 'Paper(index:51)', no check done to see if can carry
+```
+### Action 90 - Input: REA PAP
+*Conditions*
+```
+item 'Paper(index:51)' carried or in room with player
+```
+*Actions*
+```
+Print message 'says: `SAY ZAP   to restore someone changed to stone\!`'
+```
+### Action 91 - Input: LOO DOL
+*Conditions*
+```
+item 'Doll(index:44)' carried or in room with player
+```
+*Actions*
+```
+Print message 'Doll looks like Count Cristo\. There're pins in it\!'
+```
+### Action 92 - Input: LOO COF
+*Conditions*
+```
+item 'Open Coffin(index:27)' in room with player
+```
+*Actions*
+```
+Print message 'A sign here says:'
+Print message 'Count Cristo's been CURSED\! There's one way for him to flee\! Find it, and he'll go FREE\!'
+continue with next action
+Print message 'There's a man here'
+```
+### Action 93 - Probability: 0
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' not in game
+```
+*Actions*
+```
+Print message 'He's wearing a rabbit's foot'
+```
+### Action 94 - Probability: 0
+*Conditions*
+```
+item 'Sapphire ring(index:25)' not in game
+```
+*Actions*
+```
+Print message 'Wearing a sapphire ring'
+```
+### Action 95 - Input: YEL CHA
+*Conditions*
+```
+player in room 1
+item 'Brightly glowing idol(index:9)' carried or in room with player
+item 'Four leaf clover(index:14)' carried or in room with player
+bitflag 6 is set
+item 'Doll(index:44)' carried or in room with player
+```
+*Actions*
+```
+continue with next action
+Print message 'There's a CLAP OF THUNDER\!'
+wait 2 seconds
+Print message 'Pins fall out of doll'
+```
+### Action 96 - Probability: 0
+*Actions*
+```
+drops item 'Smiling Count Cristo(index:65)' into current room
+look
+Print message 'HURRAH\! Look who is in the room\!'
+game over
+```
+### Action 97 - Input: GET NAI
+*Conditions*
+```
+item 'Nails(index:42)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+get item 'Nails(index:42)', check if can carry
+```
+### Action 98 - Input: GO POT
+*Conditions*
+```
+item 'Open jail cell(index:56)' in room with player
+```
+*Actions*
+```
+Print message 'OK'
+```
+### Action 99 - Input: LOO CHE
+*Conditions*
+```
+item 'Labeled chemicals(index:38)' carried or in room with player
+```
+*Actions*
+```
+Print message 'They appear to be mixable\.'
+```
+### Action 100 - Input: LOO POT
+*Conditions*
+```
+item 'Cast iron pot(index:16)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's witch's brew there'
+```
+### Action 101 - Input: GET FOO
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' not in game
+item 'Open Coffin(index:27)' in room with player
+```
+*Actions*
+```
+get item 'Rabbit's foot(index:32)', check if can carry
+Print message 'OK'
+```
+### Action 102 - Input: GET FOO
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' carried or in room with player
+```
+*Actions*
+```
+get item 'Rabbit's foot(index:32)', check if can carry
+Print message 'OK'
+```
+### Action 103 - Input: GO WIN
+*Conditions*
+```
+item 'Open Window(index:10)' in room with player
+```
+*Actions*
+```
+move room 22
+Print message 'OK'
+look
+```
+### Action 104 - Input: DUS IDO
+*Conditions*
+```
+item 'Dusty Idol(index:43)' carried or in room with player
+```
+*Actions*
+```
+Print message 'As I dust of the Idol it begins to glow\!'
+swap item locations 'Brightly glowing idol(index:9)' and 'Dusty Idol(index:43)'
+look
+```
+### Action 105 - Input: MOV KET
+*Conditions*
+```
+item 'Dark hole(index:6)' in room with player
+item 'Dark hole(index:6)' in room with player
+```
+*Actions*
+```
+Item 'Dark hole(index:6)' is removed from the game (put in room 0)
+```
+### Action 106 - Input: LOO KET
+*Conditions*
+```
+item 'Big kettle(index:5)' in room with player
+player in room 3
+item 'Dark hole(index:6)' not in game
+```
+*Actions*
+```
+Print message 'OK'
+Print message 'I see a hole under it\!'
+Print message 'There's some soup here\.'
+```
+### Action 107 - Input: CLO DOO
+*Actions*
+```
+Print message 'won't budge\!'
+```
+### Action 108 - Input: DRI SOU
+*Conditions*
+```
+item 'Big kettle(index:5)' in room with player
+```
+*Actions*
+```
+Print message 'OK'
+Item 'Wooden boards(index:45)' is removed from the game (put in room 0)
+```
+### Action 109 - Input: WAV STI
+*Conditions*
+```
+item 'Doll(index:44)' carried or in room with player
+```
+*Actions*
+```
+continue with next action
+Print message 'OK'
+Print message 'Nothing happened'
+wait 2 seconds
+```
+### Action 110 - Probability: 0
+*Conditions*
+```
+item 'Brightly glowing idol(index:9)' carried or in room with player
+player in room 1
+bitflag 3 is set
+```
+*Actions*
+```
+wait 2 seconds
+Print message 'There's a CLAP OF THUNDER\!'
+Print message 'Double bubble toil & trouble the encAntAtions Are About to peAk\!'
+set 6 flag
+```
+### Action 111 - Input: SAW GRA
+*Conditions*
+```
+item 'GrAting(index:48)' in room with player
+item 'Rusting SAW(index:49)' carried
+```
+*Actions*
+```
+Print message 'It's hArd work but it seems to be coming loose'
+Print message 'OK'
+continue with next action
+Item 'GrAting(index:48)' is removed from the game (put in room 0)
+```
+### Action 112 - Probability: 0
+*Actions*
+```
+drops item 'Button in the wall(index:50)' into current room
+Print message 'I've got it\!'
+take item 'Broken grating(index:59)', no check done to see if can carry
+```
+### Action 113 - Input: PRE BUT
+*Conditions*
+```
+item 'Button in the wall(index:50)' in room with player
+```
+*Actions*
+```
+Print message 'Heavy duty exhaust fan comes on & sucks me up\!'
+move room 18
+look
+```
+### Action 114 - Input: QUI ANY
+*Actions*
+```
+game over
+```
+### Action 115 - Input: GO CRA
+*Conditions*
+```
+item 'Wide crack in the wall(index:31)' in room with player
+```
+*Actions*
+```
+Print message 'OK'
+move room 23
+look
+```
+### Action 116 - Input: LOO STA
+*Conditions*
+```
+item 'Ju\-Ju man statue(index:53)' carried or in room with player
+```
+*Actions*
+```
+Print message 'Statue is made of stone'
+```
+### Action 117 - Input: LIS ANY
+*Conditions*
+```
+item 'Ju\-Ju man(index:29)' carried or in room with player
+```
+*Actions*
+```
+Print message 'Ju\-Ju man says:`My bag is now yours\! Its magic will help you \-CRACK\- the curse\!`\.'
+```
+### Action 118 - Input: GET HAM
+*Conditions*
+```
+item 'Antique hammer(index:47)' carried or in room with player
+```
+*Actions*
+```
+get item 'Antique hammer(index:47)', check if can carry
+Print message 'OK'
+```
+### Action 119 - Input: GET HAM
+*Conditions*
+```
+item 'Open SAfe(index:34)' in room with player
+bitflag 5 is false
+```
+*Actions*
+```
+get item 'Antique hammer(index:47)', check if can carry
+Print message 'OK'
+set 5 flag
+```
+### Action 120 - Input: REA PAG
+*Conditions*
+```
+item 'Page torn from a book(index:64)' carried or in room with player
+```
+*Actions*
+```
+Print message '\.\.\.wave the stick and hold the lamp and don't forget to yell `CHANT`\! Oh yes, to help it succeed, a doll you'll need\.\.\.'
+```
+### Action 121 - Input: WAV ANY
+*Actions*
+```
+Print message 'OK'
+Print message 'Nothing happened'
+```
+### Action 122 - Input: SHR ANY
+*Actions*
+```
+Print message 'how?'
+```
+### Action 123 - Input: REA WRI
+*Conditions*
+```
+item 'Plaque(index:2)' carried or in room with player
+item 'Broken glass(index:4)' not carried or in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'Prints too small for the unaided eye\.'
+```
+### Action 124 - Input: OPE BAG
+*Conditions*
+```
+item 'Ju\-Ju man(index:29)' in game
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+```
+### Action 125 - Input: LOO CEL
+*Conditions*
+```
+player in room 11
+```
+*Actions*
+```
+Print message 'I see nothing very special\.'
+```
+### Action 126 - Input: MOV ARM
+*Conditions*
+```
+item 'Knight's Suit of Armor(index:57)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+```
+### Action 127 - Input: GET BAG
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' in room with player
+```
+*Actions*
+```
+Print message 'It appears stuck to the floor\!'
+```
+### Action 128 - Input: REA WRI
+*Conditions*
+```
+item 'Plaque(index:2)' carried or in room with player
+item 'Broken glass(index:4)' carried or in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'Phosphorescent letters are very hard to read in bright light\!'
+```
+### Action 129 - Input: GO LED
+*Conditions*
+```
+player in room 9
+item 'Ledge(index:1)' in room with player
+```
+*Actions*
+```
+Print message 'Bird says: `ask for ADVENTURE 5, \-THE COUNT\- at your favorite computer dealer\. It will be LOVE AT FIRST BYTE\!` '
+```
+### Action 130 - Input: LIS ANY
+*Conditions*
+```
+player in room 15
+item 'Stuck Chimney Sweep(index:35)' in game
+```
+*Actions*
+```
+Print message 'I hear strange sounds, as if someone were moaning\.'
+Print message 'Its very faint\.'
+```
+### Action 131 - Input: LIS ANY
+*Conditions*
+```
+item 'Stuck Chimney Sweep(index:35)' in game
+player in room 14
+```
+*Actions*
+```
+Print message 'I hear strange sounds, as if someone were moaning\.'
+Print message 'Its much louder up here\.'
+```
+### Action 132 - Input: GO COF
+*Conditions*
+```
+item 'Open Coffin(index:27)' in room with player
+```
+*Actions*
+```
+Print message 'There's no room in there for me\!'
+```
+### Action 133 - Input: GET SOU
+*Conditions*
+```
+item 'Big kettle(index:5)' in room with player
+```
+*Actions*
+```
+Print message 'I've no container\.'
+```
+### Action 134 - Input: GO HOL
+*Conditions*
+```
+item 'Hole in the wall(index:62)' in room with player
+```
+*Actions*
+```
+move room 6
+look
+Print message 'You startled medium & she vanished'
+Item 'Spirit Medium(index:23)' is removed from the game (put in room 0)
+```
+### Action 135 - Input: LOO RIN
+*Conditions*
+```
+item 'Sapphire ring(index:25)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's something written there'
+```
+### Action 136 - Input: CUT IDO
+*Conditions*
+```
+item 'Dusty Idol(index:43)' carried or in room with player
+item 'Bloody Knife(index:0)' carried or in room with player
+```
+*Actions*
+```
+Print message 'My idol acted strange'
+Print message 'Some dust fell off it and it glowed briefly\.'
+```
+### Action 137 - Input: CUT ANY
+*Conditions*
+```
+item 'Bloody Knife(index:0)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+Print message 'Nothing happened'
+Print message 'Knife made no impression on it\!'
+```
+### Action 138 - Input: LOO BAG
+*Conditions*
+```
+item 'Voodoo book(index:52)' in game
+item 'Stick(index:54)' not in game
+item 'Ju\-Ju man(index:29)' in game
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's a stick there\.'
+```
+### Action 139 - Input: GET BOO
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+item 'Ju\-Ju man(index:29)' in game
+item 'Voodoo book(index:52)' not in game
+```
+*Actions*
+```
+get item 'Voodoo book(index:52)', check if can carry
+Print message 'OK'
+```
+### Action 140 - Input: GET BOO
+*Conditions*
+```
+item 'Voodoo book(index:52)' carried or in room with player
+```
+*Actions*
+```
+get item 'Voodoo book(index:52)', check if can carry
+Print message 'OK'
+```
+### Action 141 - Input: GET STI
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' carried or in room with player
+item 'Stick(index:54)' not in game
+item 'Ju\-Ju man(index:29)' in game
+```
+*Actions*
+```
+get item 'Stick(index:54)', check if can carry
+Print message 'OK'
+```
+### Action 142 - Input: GET STI
+*Conditions*
+```
+item 'Stick(index:54)' carried or in room with player
+```
+*Actions*
+```
+get item 'Stick(index:54)', check if can carry
+Print message 'OK'
+```
+### Action 143 - Input: GO DOO
+*Conditions*
+```
+item 'Wide open door(index:41)' in room with player
+```
+*Actions*
+```
+move room 19
+look
+```
+### Action 144 - Input: SHA SWO
+*Conditions*
+```
+player in room 0
+```
+### Action 145 - Input: LOO IDO
+*Conditions*
+```
+item 'Dusty Idol(index:43)' carried or in room with player
+```
+*Actions*
+```
+Print message 'Boy it looks dusty\.'
+Print message 'I see nothing very special\.'
+```
+### Action 146 - Input: LOO IDO
+*Conditions*
+```
+item 'Brightly glowing idol(index:9)' carried or in room with player
+```
+*Actions*
+```
+Print message 'Its glowing\.'
+```
+### Action 147 - Input: DIG GRA
+*Conditions*
+```
+item 'Pocket Shovel(index:39)' carried or in room with player
+```
+*Actions*
+```
+Print message 'A sepulchral voice says:'
+Print message 'Strange hobby you have'
+```
+### Action 148 - Input: SAW ANY
+*Conditions*
+```
+item 'Rusting SAW(index:49)' carried
+item 'Closed cell door(index:58)' in room with player
+```
+*Actions*
+```
+Print message 'You've been sprung'
+move room 11
+look
+```
+### Action 149 - Input: LIS CRY
+*Conditions*
+```
+player in room 9
+```
+*Actions*
+```
+Print message 'Bird says: `ask for ADVENTURE 5, \-THE COUNT\- at your favorite computer dealer\. It will be LOVE AT FIRST BYTE\!` '
+```
+### Action 150 - Input: OPE WIN
+*Conditions*
+```
+player in room 0
+```
+### Action 151 - Input: SLI ANY
+*Conditions*
+```
+item 'Slick chute leading downward(index:28)' in room with player
+```
+*Actions*
+```
+move room 8
+look
+```
+### Action 152 - Input: LIS ANY
+*Conditions*
+```
+item 'Stuck Chimney Sweep(index:35)' in room with player
+```
+*Actions*
+```
+Print message 'HELP ME, I'm stuck\!'
+```
+### Action 153 - Input: HEL ANY
+*Conditions*
+```
+player in room 10
+```
+*Actions*
+```
+Print message 'Check out the fireplace\.'
+```
+### Action 154 - Input: DAN ANY
+*Actions*
+```
+Print message 'OK'
+Print message 'Nothing happened'
+```
+### Action 155 - Input: YEL ANY
+*Actions*
+```
+Print message 'OK'
+echo noun
+Print message 'Nothing happened'
+```
+### Action 156 - Input: GET NAI
+*Conditions*
+```
+item 'Wood boards nailed to chimney wall(index:46)' in room with player
+item 'Antique hammer(index:47)' carried
+```
+*Actions*
+```
+Print message 'Nails were rusted but I got them out\.'
+swap item locations 'Wood boards nailed to chimney wall(index:46)' and 'Wooden boards(index:45)'
+take item 'Nails(index:42)', no check done to see if can carry
+```
+### Action 157 - Input: ON FLO
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' carried
+```
+*Actions*
+```
+drops item 'Rabbit's foot(index:32)' into current room
+Print message 'OK'
+```
+### Action 158 - Input: GET BOA
+*Conditions*
+```
+item 'Wooden boards(index:45)' carried or in room with player
+bitflag 8 is false
+```
+*Actions*
+```
+get item 'Wooden boards(index:45)', check if can carry
+drops item 'GrAting(index:48)' into current room
+set 8 flag
+```
+### Action 159 - Input: GET BOA
+*Conditions*
+```
+item 'Wooden boards(index:45)' carried or in room with player
+```
+*Actions*
+```
+get item 'Wooden boards(index:45)', check if can carry
+Print message 'OK'
+```
+### Action 160 - Input: GET BRE
+*Actions*
+```
+Print message 'I've no container\.'
+```
+### Action 161 - Input: HEL ANY
+*Conditions*
+```
+item 'GrAting(index:48)' in room with player
+```
+*Actions*
+```
+Print message 'Saw grating\!'
+```
+### Action 162 - Input: MIX CHE
+*Conditions*
+```
+item 'Labeled chemicals(index:38)' carried or in room with player
+```
+*Actions*
+```
+swap item locations 'Mixed Chemicals(index:40)' and 'Labeled chemicals(index:38)'
+Print message 'OK'
+```
+### Action 163 - Input: HEL SWE
+*Conditions*
+```
+item 'Stuck Chimney Sweep(index:35)' in room with player
+```
+*Actions*
+```
+Print message 'how?'
+```
+### Action 164 - Input: RUB IDO
+*Conditions*
+```
+item 'Dusty Idol(index:43)' carried or in room with player
+```
+*Actions*
+```
+Print message 'My idol acted strange'
+Print message 'Some dust fell off it and it glowed briefly\.'
+```
+### Action 165 - Input: LOO ANY
+*Actions*
+```
+look
+Print message 'I see nothing very special\.'
+```
+### Action 166 - Input: CUT ANY
+*Conditions*
+```
+item 'Bloody Knife(index:0)' not carried
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'I haven't got a knife\!'
+```
+### Action 167 - Input: LIS ANY
+*Actions*
+```
+Print message 'I hear nothing\.'
+```
+### Action 168 - Input: GET RIN
+*Conditions*
+```
+item 'Sapphire ring(index:25)' in room with player
+```
+*Actions*
+```
+get item 'Sapphire ring(index:25)', check if can carry
+Print message 'OK'
+```
+### Action 169 - Input: SMO POT
+*Actions*
+```
+Print message 'That's illegal\!'
+```
+### Action 170 - Input: BRE TUB
+*Conditions*
+```
+item 'Chem tubes(index:36)' carried or in room with player
+item 'Shield(index:7)' not carried
+```
+*Actions*
+```
+move room 25
+look
+Print message 'One of the test tubes EXPLODED\!'
+continue with next action
+```
+### Action 171 - Input: SAW ANY
+*Conditions*
+```
+item 'Rusting SAW(index:49)' carried
+```
+*Actions*
+```
+Print message 'OK'
+Print message 'Nothing happened'
+```
+### Action 172 - Input: REA LEA
+*Conditions*
+```
+item 'Advertising leaflet(index:60)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+Print message 'For a reading just `SUMMON MEDIUM MAEGEN` today\!\!'
+```
+### Action 173 - Input: DIG ANY
+*Conditions*
+```
+item 'Pocket Shovel(index:39)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+Print message 'Nothing happened'
+```
+### Action 174 - Input: GO CRA
+*Conditions*
+```
+item 'Crack in the wall(index:61)' in room with player
+```
+*Actions*
+```
+Print message 'I can't do that'
+Print message 'I'm too big'
+Print message 'It will take some strong magic to get me through that\!'
+```
+### Action 175 - Input: HEL ANY
+*Actions*
+```
+Print message 'Nothing happened'
+```
+### Action 176 - Input: OPE SAF
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+Print message 'Safe's combination lock is numbered from 33 to 38\.'
+```
+### Action 177 - Input: BRE STA
+*Conditions*
+```
+item 'Ju\-Ju man statue(index:53)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OK'
+swap item locations 'Ju-Ju man statue(index:53)' and 'Pieces of rock(index:63)'
+```
+### Action 178 - Input: TUR 34
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+set 1 flag
+Print message 'OK'
+```
+### Action 179 - Input: TUR 35
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+set 1 flag
+Print message 'OK'
+```
+### Action 180 - Input: TUR 36
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+set 1 flag
+Print message 'OK'
+```
+### Action 181 - Input: TUR 37
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+set 1 flag
+Print message 'OK'
+```
+### Action 182 - Input: REA RIN
+*Conditions*
+```
+item 'Sapphire ring(index:25)' carried or in room with player
+```
+*Actions*
+```
+Print message 'Inscription on ring says: `WAVE ME\!`'
+```
+### Action 183 - Input: OPE WIN
+*Conditions*
+```
+item 'Closed Window(index:19)' in room with player
+```
+*Actions*
+```
+Print message 'won't budge\!'
+```
+### Action 184 - Input: RUB RIN
+*Conditions*
+```
+item 'Sapphire ring(index:25)' carried or in room with player
+```
+*Actions*
+```
+Print message 'There's something written there'
+```
+### Action 185 - Input: RUB ANY
+*Actions*
+```
+Print message 'OK'
+Print message 'Nothing happened'
+```
+### Action 186 - Input: TUR LOC
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+Print message 'Use a number\!'
+```
+### Action 187 - Input: TUR 33
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+set 1 flag
+Print message 'OK'
+```
+### Action 188 - Input: TUR 38
+*Conditions*
+```
+item 'Closed SAfe(index:37)' in room with player
+```
+*Actions*
+```
+set 1 flag
+Print message 'OK'
+```
+### Action 189 - Input: HUG DOL
+*Conditions*
+```
+item 'Doll(index:44)' carried or in room with player
+```
+*Actions*
+```
+Print message 'OUCH'
+```
+### Action 191 - Take for item Bloody Knife - Input: GET KNI
+*Conditions*
+```
+item 'Bloody Knife(index:0)' in room with player
+```
+*Actions*
+```
+get item 'Bloody Knife(index:0)', check if can carry
+look
+```
+### Action 192 - Drop for item Bloody Knife - Input: DRO KNI
+*Conditions*
+```
+item 'Bloody Knife(index:0)' carried
+```
+*Actions*
+```
+drops item 'Bloody Knife(index:0)' into current room
+look
+```
+### Action 193 - Take for item Plaque - Input: GET WRI
+*Conditions*
+```
+item 'Plaque(index:2)' in room with player
+```
+*Actions*
+```
+get item 'Plaque(index:2)', check if can carry
+look
+```
+### Action 194 - Drop for item Plaque - Input: DRO WRI
+*Conditions*
+```
+item 'Plaque(index:2)' carried
+```
+*Actions*
+```
+drops item 'Plaque(index:2)' into current room
+look
+```
+### Action 195 - Take for item Animal heads - Input: GET HEA
+*Conditions*
+```
+item 'Animal heads(index:3)' in room with player
+```
+*Actions*
+```
+get item 'Animal heads(index:3)', check if can carry
+look
+```
+### Action 196 - Drop for item Animal heads - Input: DRO HEA
+*Conditions*
+```
+item 'Animal heads(index:3)' carried
+```
+*Actions*
+```
+drops item 'Animal heads(index:3)' into current room
+look
+```
+### Action 197 - Take for item Broken glass - Input: GET GLA
+*Conditions*
+```
+item 'Broken glass(index:4)' in room with player
+```
+*Actions*
+```
+get item 'Broken glass(index:4)', check if can carry
+look
+```
+### Action 198 - Drop for item Broken glass - Input: DRO GLA
+*Conditions*
+```
+item 'Broken glass(index:4)' carried
+```
+*Actions*
+```
+drops item 'Broken glass(index:4)' into current room
+look
+```
+### Action 199 - Take for item Shield - Input: GET SHI
+*Conditions*
+```
+item 'Shield(index:7)' in room with player
+```
+*Actions*
+```
+get item 'Shield(index:7)', check if can carry
+look
+```
+### Action 200 - Drop for item Shield - Input: DRO SHI
+*Conditions*
+```
+item 'Shield(index:7)' carried
+```
+*Actions*
+```
+drops item 'Shield(index:7)' into current room
+look
+```
+### Action 201 - Take for item Brightly glowing idol - Input: GET IDO
+*Conditions*
+```
+item 'Brightly glowing idol(index:9)' in room with player
+```
+*Actions*
+```
+get item 'Brightly glowing idol(index:9)', check if can carry
+look
+```
+### Action 202 - Drop for item Brightly glowing idol - Input: DRO IDO
+*Conditions*
+```
+item 'Brightly glowing idol(index:9)' carried
+```
+*Actions*
+```
+drops item 'Brightly glowing idol(index:9)' into current room
+look
+```
+### Action 203 - Take for item Four leaf clover - Input: GET CLO
+*Conditions*
+```
+item 'Four leaf clover(index:14)' in room with player
+```
+*Actions*
+```
+get item 'Four leaf clover(index:14)', check if can carry
+look
+```
+### Action 204 - Drop for item Four leaf clover - Input: DRO CLO
+*Conditions*
+```
+item 'Four leaf clover(index:14)' carried
+```
+*Actions*
+```
+drops item 'Four leaf clover(index:14)' into current room
+look
+```
+### Action 205 - Take for item Cast iron pot - Input: GET POT
+*Conditions*
+```
+item 'Cast iron pot(index:16)' in room with player
+```
+*Actions*
+```
+get item 'Cast iron pot(index:16)', check if can carry
+look
+```
+### Action 206 - Drop for item Cast iron pot - Input: DRO POT
+*Conditions*
+```
+item 'Cast iron pot(index:16)' carried
+```
+*Actions*
+```
+drops item 'Cast iron pot(index:16)' into current room
+look
+```
+### Action 207 - Take for item Soot - Input: GET SOO
+*Conditions*
+```
+item 'Soot(index:21)' in room with player
+```
+*Actions*
+```
+get item 'Soot(index:21)', check if can carry
+look
+```
+### Action 208 - Drop for item Soot - Input: DRO SOO
+*Conditions*
+```
+item 'Soot(index:21)' carried
+```
+*Actions*
+```
+drops item 'Soot(index:21)' into current room
+look
+```
+### Action 209 - Take for item Sapphire ring - Input: GET RIN
+*Conditions*
+```
+item 'Sapphire ring(index:25)' in room with player
+```
+*Actions*
+```
+get item 'Sapphire ring(index:25)', check if can carry
+look
+```
+### Action 210 - Drop for item Sapphire ring - Input: DRO RIN
+*Conditions*
+```
+item 'Sapphire ring(index:25)' carried
+```
+*Actions*
+```
+drops item 'Sapphire ring(index:25)' into current room
+look
+```
+### Action 211 - Take for item Ju-Ju bag - Input: GET BAG
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' in room with player
+```
+*Actions*
+```
+get item 'Ju-Ju bag(index:26)', check if can carry
+look
+```
+### Action 212 - Drop for item Ju-Ju bag - Input: DRO BAG
+*Conditions*
+```
+item 'Ju\-Ju bag(index:26)' carried
+```
+*Actions*
+```
+drops item 'Ju-Ju bag(index:26)' into current room
+look
+```
+### Action 213 - Take for item Rabbit's foot - Input: GET FOO
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' in room with player
+```
+*Actions*
+```
+get item 'Rabbit's foot(index:32)', check if can carry
+look
+```
+### Action 214 - Drop for item Rabbit's foot - Input: DRO FOO
+*Conditions*
+```
+item 'Rabbit's foot(index:32)' carried
+```
+*Actions*
+```
+drops item 'Rabbit's foot(index:32)' into current room
+look
+```
+### Action 215 - Take for item Dull & broken sword - Input: GET SWO
+*Conditions*
+```
+item 'Dull & broken sword(index:33)' in room with player
+```
+*Actions*
+```
+get item 'Dull & broken sword(index:33)', check if can carry
+look
+```
+### Action 216 - Drop for item Dull & broken sword - Input: DRO SWO
+*Conditions*
+```
+item 'Dull & broken sword(index:33)' carried
+```
+*Actions*
+```
+drops item 'Dull & broken sword(index:33)' into current room
+look
+```
+### Action 217 - Take for item Chem tubes - Input: GET TUB
+*Conditions*
+```
+item 'Chem tubes(index:36)' in room with player
+```
+*Actions*
+```
+get item 'Chem tubes(index:36)', check if can carry
+look
+```
+### Action 218 - Drop for item Chem tubes - Input: DRO TUB
+*Conditions*
+```
+item 'Chem tubes(index:36)' carried
+```
+*Actions*
+```
+drops item 'Chem tubes(index:36)' into current room
+look
+```
+### Action 219 - Take for item Labeled chemicals - Input: GET CHE
+*Conditions*
+```
+item 'Labeled chemicals(index:38)' in room with player
+```
+*Actions*
+```
+get item 'Labeled chemicals(index:38)', check if can carry
+look
+```
+### Action 220 - Drop for item Labeled chemicals - Input: DRO CHE
+*Conditions*
+```
+item 'Labeled chemicals(index:38)' carried
+```
+*Actions*
+```
+drops item 'Labeled chemicals(index:38)' into current room
+look
+```
+### Action 221 - Take for item Pocket Shovel - Input: GET SHO
+*Conditions*
+```
+item 'Pocket Shovel(index:39)' in room with player
+```
+*Actions*
+```
+get item 'Pocket Shovel(index:39)', check if can carry
+look
+```
+### Action 222 - Drop for item Pocket Shovel - Input: DRO SHO
+*Conditions*
+```
+item 'Pocket Shovel(index:39)' carried
+```
+*Actions*
+```
+drops item 'Pocket Shovel(index:39)' into current room
+look
+```
+### Action 223 - Take for item Mixed Chemicals - Input: GET CHE
+*Conditions*
+```
+item 'Mixed Chemicals(index:40)' in room with player
+```
+*Actions*
+```
+get item 'Mixed Chemicals(index:40)', check if can carry
+look
+```
+### Action 224 - Drop for item Mixed Chemicals - Input: DRO CHE
+*Conditions*
+```
+item 'Mixed Chemicals(index:40)' carried
+```
+*Actions*
+```
+drops item 'Mixed Chemicals(index:40)' into current room
+look
+```
+### Action 225 - Take for item Nails - Input: GET NAI
+*Conditions*
+```
+item 'Nails(index:42)' in room with player
+```
+*Actions*
+```
+get item 'Nails(index:42)', check if can carry
+look
+```
+### Action 226 - Drop for item Nails - Input: DRO NAI
+*Conditions*
+```
+item 'Nails(index:42)' carried
+```
+*Actions*
+```
+drops item 'Nails(index:42)' into current room
+look
+```
+### Action 227 - Take for item Dusty Idol - Input: GET IDO
+*Conditions*
+```
+item 'Dusty Idol(index:43)' in room with player
+```
+*Actions*
+```
+get item 'Dusty Idol(index:43)', check if can carry
+look
+```
+### Action 228 - Drop for item Dusty Idol - Input: DRO IDO
+*Conditions*
+```
+item 'Dusty Idol(index:43)' carried
+```
+*Actions*
+```
+drops item 'Dusty Idol(index:43)' into current room
+look
+```
+### Action 229 - Take for item Doll - Input: GET DOL
+*Conditions*
+```
+item 'Doll(index:44)' in room with player
+```
+*Actions*
+```
+get item 'Doll(index:44)', check if can carry
+look
+```
+### Action 230 - Drop for item Doll - Input: DRO DOL
+*Conditions*
+```
+item 'Doll(index:44)' carried
+```
+*Actions*
+```
+drops item 'Doll(index:44)' into current room
+look
+```
+### Action 231 - Take for item Wooden boards - Input: GET BOA
+*Conditions*
+```
+item 'Wooden boards(index:45)' in room with player
+```
+*Actions*
+```
+get item 'Wooden boards(index:45)', check if can carry
+look
+```
+### Action 232 - Drop for item Wooden boards - Input: DRO BOA
+*Conditions*
+```
+item 'Wooden boards(index:45)' carried
+```
+*Actions*
+```
+drops item 'Wooden boards(index:45)' into current room
+look
+```
+### Action 233 - Take for item Antique hammer - Input: GET HAM
+*Conditions*
+```
+item 'Antique hammer(index:47)' in room with player
+```
+*Actions*
+```
+get item 'Antique hammer(index:47)', check if can carry
+look
+```
+### Action 234 - Drop for item Antique hammer - Input: DRO HAM
+*Conditions*
+```
+item 'Antique hammer(index:47)' carried
+```
+*Actions*
+```
+drops item 'Antique hammer(index:47)' into current room
+look
+```
+### Action 235 - Take for item Rusting SAW - Input: GET SAW
+*Conditions*
+```
+item 'Rusting SAW(index:49)' in room with player
+```
+*Actions*
+```
+get item 'Rusting SAW(index:49)', check if can carry
+look
+```
+### Action 236 - Drop for item Rusting SAW - Input: DRO SAW
+*Conditions*
+```
+item 'Rusting SAW(index:49)' carried
+```
+*Actions*
+```
+drops item 'Rusting SAW(index:49)' into current room
+look
+```
+### Action 237 - Take for item Paper - Input: GET PAP
+*Conditions*
+```
+item 'Paper(index:51)' in room with player
+```
+*Actions*
+```
+get item 'Paper(index:51)', check if can carry
+look
+```
+### Action 238 - Drop for item Paper - Input: DRO PAP
+*Conditions*
+```
+item 'Paper(index:51)' carried
+```
+*Actions*
+```
+drops item 'Paper(index:51)' into current room
+look
+```
+### Action 239 - Take for item Voodoo book - Input: GET BOO
+*Conditions*
+```
+item 'Voodoo book(index:52)' in room with player
+```
+*Actions*
+```
+get item 'Voodoo book(index:52)', check if can carry
+look
+```
+### Action 240 - Drop for item Voodoo book - Input: DRO BOO
+*Conditions*
+```
+item 'Voodoo book(index:52)' carried
+```
+*Actions*
+```
+drops item 'Voodoo book(index:52)' into current room
+look
+```
+### Action 241 - Take for item Ju-Ju man statue - Input: GET STA
+*Conditions*
+```
+item 'Ju\-Ju man statue(index:53)' in room with player
+```
+*Actions*
+```
+get item 'Ju-Ju man statue(index:53)', check if can carry
+look
+```
+### Action 242 - Drop for item Ju-Ju man statue - Input: DRO STA
+*Conditions*
+```
+item 'Ju\-Ju man statue(index:53)' carried
+```
+*Actions*
+```
+drops item 'Ju-Ju man statue(index:53)' into current room
+look
+```
+### Action 243 - Take for item Stick - Input: GET STI
+*Conditions*
+```
+item 'Stick(index:54)' in room with player
+```
+*Actions*
+```
+get item 'Stick(index:54)', check if can carry
+look
+```
+### Action 244 - Drop for item Stick - Input: DRO STI
+*Conditions*
+```
+item 'Stick(index:54)' carried
+```
+*Actions*
+```
+drops item 'Stick(index:54)' into current room
+look
+```
+### Action 245 - Take for item Broken grating - Input: GET GRA
+*Conditions*
+```
+item 'Broken grating(index:59)' in room with player
+```
+*Actions*
+```
+get item 'Broken grating(index:59)', check if can carry
+look
+```
+### Action 246 - Drop for item Broken grating - Input: DRO GRA
+*Conditions*
+```
+item 'Broken grating(index:59)' carried
+```
+*Actions*
+```
+drops item 'Broken grating(index:59)' into current room
+look
+```
+### Action 247 - Take for item Advertising leaflet - Input: GET LEA
+*Conditions*
+```
+item 'Advertising leaflet(index:60)' in room with player
+```
+*Actions*
+```
+get item 'Advertising leaflet(index:60)', check if can carry
+look
+```
+### Action 248 - Drop for item Advertising leaflet - Input: DRO LEA
+*Conditions*
+```
+item 'Advertising leaflet(index:60)' carried
+```
+*Actions*
+```
+drops item 'Advertising leaflet(index:60)' into current room
+look
+```
+### Action 249 - Take for item Pieces of rock - Input: GET ROC
+*Conditions*
+```
+item 'Pieces of rock(index:63)' in room with player
+```
+*Actions*
+```
+get item 'Pieces of rock(index:63)', check if can carry
+look
+```
+### Action 250 - Drop for item Pieces of rock - Input: DRO ROC
+*Conditions*
+```
+item 'Pieces of rock(index:63)' carried
+```
+*Actions*
+```
+drops item 'Pieces of rock(index:63)' into current room
+look
+```
+### Action 251 - Take for item Page torn from a book - Input: GET PAG
+*Conditions*
+```
+item 'Page torn from a book(index:64)' in room with player
+```
+*Actions*
+```
+get item 'Page torn from a book(index:64)', check if can carry
+look
+```
+### Action 252 - Drop for item Page torn from a book - Input: DRO PAG
+*Conditions*
+```
+item 'Page torn from a book(index:64)' carried
+```
+*Actions*
+```
+drops item 'Page torn from a book(index:64)' into current room
+look
+```
+## Words
+### Verbs
+| Word| Index| Aliases |
+| ----| -----| ------- |
+| AUT| 0|  |
+| GO| 1| ENT, WAL, CLI, RUN |
+| \.| 6|  |
+| | 7|  |
+| | 8|  |
+| | 9|  |
+| GET| 10| TAK, PIC, REM, PUL |
+| HEL| 15| RES |
+| \.| 17|  |
+| DRO| 18| PUT, LEA, THR |
+| DIG| 22|  |
+| ON| 23|  |
+| WAV| 24|  |
+| DUS| 25| CLE |
+| PRE| 27| PUS |
+| MOV| 29| SHO, KIC |
+| BRE| 32| SMA |
+| SAV| 34|  |
+| REA| 35|  |
+| \.| 36|  |
+| | 37|  |
+| OPE| 38|  |
+| CLO| 39|  |
+| TUR| 40| DIA |
+| LOO| 42| EXA |
+| INV| 44|  |
+| CIR| 45|  |
+| \.| 46|  |
+| QUI| 47|  |
+| DRI| 48| EAT |
+| SAW| 50|  |
+| MIX| 51|  |
+| HAM| 52|  |
+| \.| 53|  |
+| SHR| 54|  |
+| \.| 55|  |
+| LIS| 56| HEA |
+| STA| 58|  |
+| | 59|  |
+| SHA| 60|  |
+| | 61|  |
+| SLI| 62|  |
+| DAN| 63|  |
+| YEL| 64| SCR, SUM, SAY, CRY |
+| CUT| 69| STA |
+| | 71|  |
+| RUB| 72|  |
+| SMO| 73|  |
+| \.| 74|  |
+| HUG| 75|  |
+| | 76|  |
+| | 77|  |
+| | 78|  |
+| | 79|  |
+| | 80|  |
+| | 81|  |
+| | 82|  |
+| | 83|  |
+| | 84|  |
+| | 85|  |
+| | 86|  |
+| | 87|  |
+| | 88|  |
+| | 89|  |
+### Nouns
+| Word| Index| Aliases |
+| ----| -----| ------- |
+| ANY| 0|  |
+| NOR| 1|  |
+| SOU| 2|  |
+| EAS| 3|  |
+| WES| 4|  |
+| UP| 5|  |
+| DOW| 6|  |
+| KNI| 7|  |
+| COF| 8|  |
+| IDO| 9|  |
+| INV| 10|  |
+| KET| 11|  |
+| HOL| 12|  |
+| SWO| 13|  |
+| PAT| 14|  |
+| WIN| 15|  |
+| CLO| 16|  |
+| DOO| 17|  |
+| CHU| 18|  |
+| LAB| 19|  |
+| GRA| 20|  |
+| WAL| 21|  |
+| BAL| 22|  |
+| MED| 23|  |
+| CHI| 24|  |
+| WRI| 25| PLA |
+| SHI| 27|  |
+| SAF| 28|  |
+| BRE| 29|  |
+| ARM| 30|  |
+| GLA| 31|  |
+| RIN| 32|  |
+| TUB| 33|  |
+| FIR| 34|  |
+| FLU| 35| CHI |
+| 38| 37|  |
+| SOO| 38|  |
+| 33| 39|  |
+| HEA| 40| ANI |
+| CHE| 42|  |
+| STA| 43|  |
+| BAG| 44|  |
+| PIN| 45|  |
+| SAW| 46|  |
+| FOO| 47| RAB |
+| GAM| 49|  |
+| SHO| 50|  |
+| PAP| 51|  |
+| SWE| 52|  |
+| MAN| 53| CRI |
+| DOL| 55|  |
+| BOA| 56|  |
+| HAM| 57|  |
+| GRA| 58|  |
+| BUT| 59|  |
+| PUP| 60|  |
+| STI| 61|  |
+| STA| 62|  |
+| BOO| 63|  |
+| CHA| 64|  |
+| ZAP| 65|  |
+| POT| 66|  |
+| CEL| 67|  |
+| BAR| 68|  |
+| LOC| 69|  |
+| LED| 70|  |
+| WOO| 71|  |
+| VOI| 72|  |
+| SIG| 73|  |
+| FLO| 74|  |
+| NAI| 75|  |
+| MUM| 76|  |
+| CRA| 77|  |
+| SAP| 78|  |
+| ROC| 79|  |
+| ARO| 80|  |
+| CRY| 81| RAV |
+| 34| 83|  |
+| 35| 84|  |
+| 36| 85|  |
+| 37| 86|  |
+| LEA| 87|  |
+| MOA| 88|  |
+| PAG| 89|  |
+## Rooms
+| Index| Description| Exits (RoomIDs) |
+| -----| -----------| --------------- |
+| 0| |  |
+| 1| chapel| 9, 2, 4, 10 |
+| 2| Dingy Looking Stairwell| 1, 24, 3, 11 |
+| 3| room in the castle| 5, 2 |
+| 4| Tunnel| 1 |
+| 5| room in the castle| 3, 7 |
+| 6| \*I'm in Medium Maegen's Mad Room| 8 |
+| 7| room in the castle| 17, 5 |
+| 8| room in the castle|  |
+| 9| room in the castle| 1 |
+| 10| Ballroom| 1 |
+| 11| dungeon| 13, 2 |
+| 12| \*I'm in the Armory| 13 |
+| 13| torture chamber| 11, 12 |
+| 14| Chimney| 15 |
+| 15| large fireplace| 10 |
+| 16| room in the castle| 3 |
+| 17| Lab| 7 |
+| 18| narrow part of the chimney| 14 |
+| 19| Graveyard| 13 |
+| 20| parlor| 2 |
+| 21| Jail Cell|  |
+| 22| \*I'm on a ledge| 9 |
+| 23| hidden VOODOO room| 8 |
+| 24| room in the castle| 2 |
+| 25| lot of TROUBLE\!|  |
+## Messages
+| Index| Text |
+| -----| ---- |
+| 0|  |
+| 1| Count Cristo's been CURSED\! There's one way for him to flee\! Find it, and he'll go FREE\! |
+| 2| It belongs to the medium |
+| 3| Spirit vibrations drive me from room\. |
+| 4| Prints too small for the unaided eye\. |
+| 5| I can't do that |
+| 6| Nothing happened |
+| 7| Windows open |
+| 8| Window just slAmmed shut |
+| 9| For a reading just `SUMMON MEDIUM MAEGEN` today\!\! |
+| 10| I see nothing very special\. |
+| 11| Phosphorescent letters are very hard to read in bright light\! |
+| 12| Amongst the GRAVES is a four leaf clover\. |
+| 13| Raven crys something outside |
+| 14| One of the test tubes EXPLODED\! |
+| 15| This glass can't be broken |
+| 16| \. |
+| 17| They appear to be mixable\. |
+| 18| There's something written there |
+| 19| A sepulchral voice says: |
+| 20| OK |
+| 21| Safe's combination lock is numbered from 33 to 38\. |
+| 22| Ring glows briefly & door vanishes |
+| 23| OUCH |
+| 24| A sign here says: |
+| 25| There's a man here |
+| 26| Wearing a sapphire ring |
+| 27| I slide back down |
+| 28| A beam of light shines on grave |
+| 29| Pins fall out of doll |
+| 30| Plaque says: `safe \-\-\> 38 33` |
+| 31| This grAve reserved for you\! |
+| 32| There's a CLAP OF THUNDER\! |
+| 33| Ju\-Ju man says:`My bag is now yours\! Its magic will help you \-CRACK\- the curse\!`\. |
+| 34| HURRAH\! Look who is in the room\! |
+| 35| I'm now 4 feet tall\! |
+| 36| It's much to heavy to LIFT\! |
+| 37| I'm too big |
+| 38| You startled medium & she vanished |
+| 39| On what? |
+| 40| Maid chased me with broom for tracking soot through the Ball\- room\. I wonder where I am? |
+| 41| Sweep pops out, thanks me, hands me a piece of paper then vanishes\! |
+| 42| As I dust of the Idol it begins to glow\! |
+| 43| He's wearing a rabbit's foot |
+| 44| \. |
+| 45| HELP ME, I'm stuck\! |
+| 46| Luck wasn't with me\! |
+| 47| Doll looks like Count Cristo\. There're pins in it\! |
+| 48| \. |
+| 49| Bird says: `ask for ADVENTURE 5, \-THE COUNT\- at your favorite computer dealer\. It will be LOVE AT FIRST BYTE\!`  |
+| 50| There's some soup here\. |
+| 51| I see a hole under it\! |
+| 52| Nails were rusted but I got them out\. |
+| 53| It's hArd work but it seems to be coming loose |
+| 54| I hear strange sounds, as if someone were moaning\. |
+| 55| I've got it\! |
+| 56| Heavy duty exhaust fan comes on & sucks me up\! |
+| 57| \. |
+| 58| says: `SAY ZAP   to restore someone changed to stone\!` |
+| 59| Statue is made of stone |
+| 60| I hear nothing\. |
+| 61| won't budge\! |
+| 62| I'll need something to pry it off the wall\! |
+| 63| It's a book on removing curses\. Says: `With knife in hand you take a stand\. Circle coffin and\.\.\.` The rest of the page is missing\!\!\! |
+| 64| Its very dark, the only light is from the idol\. |
+| 65| That's illegal\! |
+| 66| Double bubble toil & trouble the encAntAtions Are About to peAk\! |
+| 67| There's an antique hammer here |
+| 68| There's a Clap of Thunder & then suddenly the stone statue begins to crack\. I may be in trouble now, there's someone in the room with me\! |
+| 69| Looks almost like lemonade\. Yummy\! |
+| 70| You've been turned into a broomstick & a witch rides off on you\! |
+| 71| There's witch's brew there |
+| 72| Cell door slams shut |
+| 73| You've been sprung |
+| 74| \.\.\.wave the stick and hold the lamp and don't forget to yell `CHANT`\! Oh yes, to help it succeed, a doll you'll need\.\.\. |
+| 75| Welcome to ADVENTURE:4, `VOODOO CASTLE` by Alexis ADAMS\. Dedicated to all MOMS\! |
+| 76| how? |
+| 77| It appears stuck to the floor\! |
+| 78| There's no room in there for me\! |
+| 79| My idol acted strange |
+| 80| I've no container\. |
+| 81| Some dust fell off it and it glowed briefly\. |
+| 82| Its very faint\. |
+| 83| Its much louder up here\. |
+| 84| There's a book there\. |
+| 85| There's a stick there\. |
+| 86| Boy it looks dusty\. |
+| 87| Its glowing\. |
+| 88| Strange hobby you have |
+| 89| Check out the fireplace\. |
+| 90| Its empty\. |
+| 91| I hear someone mumbling\. |
+| 92| \. |
+| 93| Saw grating\! |
+| 94| I haven't got a knife\! |
+| 95| Inscription on ring says: `WAVE ME\!` |
+| 96| Medium appears, says: `Keep a good luck charm on you & your friend\. I also see a \-moving\- bag helping you through a tight squeeze\!` |
+| 97| It will take some strong magic to get me through that\! |
+| 98| Use a number\! |
+| 99| Knife made no impression on it\! |
+## Items
+| Index| Description| GetDrop| RoomID |
+| -----| -----------| -------| ------ |
+| 0| Bloody Knife| KNI| 4 |
+| 1| Ledge| | 0 |
+| 2| Plaque| WRI| 8 |
+| 3| Animal heads| HEA| 5 |
+| 4| Broken glass| GLA| 2 |
+| 5| Big kettle| | 3 |
+| 6| Dark hole| | 0 |
+| 7| Shield| SHI| 12 |
+| 8| Stairs| | 2 |
+| 9| Brightly glowing idol| IDO| 0 |
+| 10| Open Window| | 9 |
+| 11| Dark Chimney| | 0 |
+| 12| Closed Flue| | 15 |
+| 13| Open Flue| | 0 |
+| 14| Four leaf clover| CLO| 0 |
+| 15| GrAves| | 19 |
+| 16| Cast iron pot| POT| 7 |
+| 17| Closed Coffin| | 1 |
+| 18| Crystal Ball| | 6 |
+| 19| Closed Window| | 0 |
+| 20| Large fireplace| | 10 |
+| 21| Soot| SOO| 14 |
+| 22| Tiny open door| | 13 |
+| 23| Spirit Medium| | 0 |
+| 24| Massive stone door with a SAPPHIRE set into it| | 4 |
+| 25| Sapphire ring| RIN| 0 |
+| 26| Ju\-Ju bag| BAG| 17 |
+| 27| Open Coffin| | 0 |
+| 28| Slick chute leading downward| | 0 |
+| 29| Ju\-Ju man| | 0 |
+| 30| Slippery chute leading up| | 8 |
+| 31| Wide crack in the wall| | 0 |
+| 32| Rabbit's foot| FOO| 16 |
+| 33| Dull & broken sword| SWO| 12 |
+| 34| Open SAfe| | 0 |
+| 35| Stuck Chimney Sweep| | 18 |
+| 36| Chem tubes| TUB| 17 |
+| 37| Closed SAfe| | 0 |
+| 38| Labeled chemicals| CHE| 17 |
+| 39| Pocket Shovel| SHO| 11 |
+| 40| Mixed Chemicals| CHE| 0 |
+| 41| Wide open door| | 0 |
+| 42| Nails| NAI| 0 |
+| 43| Dusty Idol| IDO| 15 |
+| 44| Doll| DOL| 22 |
+| 45| Wooden boards| BOA| 0 |
+| 46| Wood boards nailed to chimney wall| | 14 |
+| 47| Antique hammer| HAM| 0 |
+| 48| GrAting| | 0 |
+| 49| Rusting SAW| SAW| 19 |
+| 50| Button in the wall| | 0 |
+| 51| Paper| PAP| 0 |
+| 52| Voodoo book| BOO| 0 |
+| 53| Ju\-Ju man statue| STA| 20 |
+| 54| Stick| STI| 0 |
+| 55| Open wall| | 0 |
+| 56| Open jail cell| | 11 |
+| 57| Knight's Suit of Armor| | 12 |
+| 58| Closed cell door| | 21 |
+| 59| Broken grating| GRA| 0 |
+| 60| Advertising leaflet| LEA| 21 |
+| 61| Crack in the wall| | 8 |
+| 62| Hole in the wall| | 8 |
+| 63| Pieces of rock| ROC| 0 |
+| 64| Page torn from a book| PAG| 23 |
+| 65| Smiling Count Cristo| | 1 |
