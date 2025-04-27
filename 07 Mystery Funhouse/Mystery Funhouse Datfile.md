@@ -1,4 +1,4 @@
-# 7. Mystery Funhouse
+# Mystery Funhouse
 *Table of Contents*
 -[Header](#Header)
 -[Actions](#Actions)
@@ -39,7 +39,7 @@
 | --------| -----| ------- |
 | Original values| 100, 16, 0, 0, 0, 0, 11550, 0|  |
 | Probability| 100%|  |
-| Condition| ConditionID 15 ArgID 0| current counter greater than '(null)' |
+| Condition| ConditionID 15 ArgID 0| current counter greater than '0' |
 | Action| ActionID 77 | decrement current counter |
 ### Action 2 - PARK IS CLOSING - Probability: 100 %
 | Property| Value| Comment |
@@ -2383,20 +2383,13 @@
 | Condition| ConditionID 0 ArgID 74| item 'Soggy fuse(index:74)' carried |
 | Action| ActionID 53 ArgID 74| drops item 'Soggy fuse(index:74)' into current room |
 | Action| ActionID 64 ArgID 0| look |
-### Action 261 - Manually added load game action - Input: LOA GAM
+### Action 261 - Manually added load game action - Input: LOAD GAME
 | Property| Value| Comment |
 | --------| -----| ------- |
 | Original values| |  |
-| Verb| 93| LOA |
-| Noun| 92| GAM |
+| Verb| 92| LOAD |
+| Noun| 45| GAME |
 | Action| ActionID 89 ArgID 0| Load Game |
-### Action 262 - Manually added save game action - Input: SAV GAM
-| Property| Value| Comment |
-| --------| -----| ------- |
-| Original values| |  |
-| Verb| 92| SAV |
-| Noun| 92| GAM |
-| Action| ActionID 71 ArgID 0| save game |
 ## Words
 ### Verbs
 | Word| Index| Aliases |
@@ -2450,8 +2443,7 @@
 | FIX| 86| REPA |
 | | 88|  |
 | | 89|  |
-| SAV| 92|  |
-| LOA| 93|  |
+| LOAD| 92|  |
 ### Nouns
 | Word| Index| Aliases |
 | ----| -----| ------- |
@@ -2537,7 +2529,6 @@
 | CEIL| 86| CATW |
 | LOCK| 88|  |
 | PIGE| 89|  |
-| GAM| 92|  |
 ## Rooms
 | Index| Description| Exits (RoomIDs) |
 | -----| -----------| --------------- |
@@ -2686,7 +2677,7 @@
 | 0| Closed drain\. Water| | 5 |
 | 1| Rope hanging from ceiling| | 0 |
 | 2| Strange Mirror| | 2 |
-| 3| Shoes| SHOE| 1 |
+| 3| Shoes| SHOE| -1 |
 | 4| which I'm wearing| | 0 |
 | 5| Slippery Slide\. Sign on slide| | 3 |
 | 6| Locked door| | 6 |
@@ -2708,7 +2699,7 @@
 | 22| Ticket Counter| | 1 |
 | 23| Ticket| TICK| 0 |
 | 24| Bottom of heel| HEEL| 0 |
-| 25| Watch| WATC| 1 |
+| 25| Watch| WATC| -1 |
 | 26| Dark manhole| | 0 |
 | 27| Mermaid| | 5 |
 | 28| Comb| COMB| 11 |
@@ -2739,7 +2730,7 @@
 | 53| Dead tree| | 26 |
 | 54| Silver Dollar| DOLL| 0 |
 | 55| Broken branch| BRAN| 0 |
-| 56| Hard dry chewing gum| GUM| 1 |
+| 56| Hard dry chewing gum| GUM| -1 |
 | 57| Soft chewing gum| GUM| 0 |
 | 58| Stick with gum on end| BRAN| 0 |
 | 59| Bottom of stairs| | 0 |
