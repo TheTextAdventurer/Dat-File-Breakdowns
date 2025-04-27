@@ -1,4 +1,4 @@
-# 4. Voodoo Castle
+# Voodcastle Datfile
 *Table of Contents*
 -[Header](#Header)
 -[Actions](#Actions)
